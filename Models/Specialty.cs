@@ -12,15 +12,16 @@ namespace tephraAPI.Models{
         public string Requirments {get;set;}
         [MaxLength(5000)]
         public string Notes {get;set;}
-        public int Acc {get;set;}
-        public int Stk {get;set;}
-        public int Eva {get;set;}
-        public int Def {get;set;}
-        public int Spd {get;set;}
-        public int Pri {get;set;}
-        public int Aug {get;set;}
+        public int Accuracy {get;set;}
+        public int Strike {get;set;}
+        public int Evade {get;set;}
+        public int Defense {get;set;}
+        public int Speed {get;set;}
+        public int Priority {get;set;}
+        public int Augment {get;set;}
         public int DIY {get;set;}
-        public int Wnd {get;set;}
+        public int Wounds {get;set;}
+        public int HitPoints {get;set;}
 
     }
 }
