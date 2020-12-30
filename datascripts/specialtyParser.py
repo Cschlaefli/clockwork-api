@@ -7,26 +7,51 @@ with open('datascripts\Raw_text.txt', encoding='utf-8') as f :
 
 
 testline = "      Touch of Paralysis        Accuracy +1, Strike +2, Hit Points +7"
+#comment the following out to run on full text
+#lines = [testline]
 
 specialties = {}
-lines = [testline]
 
 skill = ''
+attr = ''
 subtype = ''
 
 for line in lines :
+    #some regex to match if line is skill, some regex to match if line is subtype
+    if re.search(r'.*\(.*\)', line) :
+        start = line.find("(")
+        end = line.find(")")
+        skill = line[0:start].strip()
+        attr = line[start:end].strip("(")
+        subtype = ''
+    if line.find("Specialties") != -1 or line.find("Crafting") != -1 :
+        subtype = line.strip()
+
+    # 
+    #skill = whatevermatch
+    #attr = whatevermatch
+    #subtype = ''
+
+
     out = {}
     bonus_matches = re.findall("(Accuracy|Strike|Hit Points)(\s+\+[0-9]+)", line)
-    name_end = re.search("(Accuracy\s*\+|Strike\s*\+|Hit Points\s*\+)", line).span(0)[0]
-
-    name = line[0:name_end].strip()
-    out["Name"]  = name
+    name_end = re.search("(Accuracy\s*\+|Strike\s*\+|Hit Points\s*\+)", line)
+    if name_end :
+        name_end = name_end.span(0)[0]
+        name = line[0:name_end].strip()
+        out["Name"]  = name
+        out["Skill"] = skill
+        out["Attr"] = attr
+        out["Subtype"] = subtype
+        specialties[name] = out
 
     for m in bonus_matches :
         out[m[0]] = int(m[1])
-    specialties[name] = out
 
-print( specialties)
+#print( specialties)
+
+with open('datascripts\output.json', 'w') as f :
+    f.write(json.dumps(specialties, indent=4))
 
 
 
