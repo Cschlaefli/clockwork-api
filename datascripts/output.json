@@ -19,6 +19,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 10
     },
     "Dirty Fighting": {
@@ -36,6 +37,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Fisticuffs": {
@@ -44,13 +46,15 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 1,
         "Hit Points": 10
     },
-    "Fluid\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2,": {
-        "Name": "Fluid\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2,",
+    "Fluid": {
+        "Name": "Fluid",
         "Skill": "Brawl",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 2,
         "Strike": 1,
         "Hit Points": 7
     },
@@ -69,6 +73,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 2,
         "Hit Points": 9
     },
     "Hold Steady": {
@@ -77,6 +82,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 10
     },
     "Knock Aside": {
@@ -85,6 +91,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Monkey Wrestler": {
@@ -102,13 +109,16 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 10
     },
-    "Shrug Away\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Shrug Away\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Shrug Away": {
+        "Name": "Shrug Away",
         "Skill": "Brawl",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 10
     },
     "Throat Jab": {
@@ -117,6 +127,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 2,
         "Hit Points": 11
     },
     "Bone-Breaker": {
@@ -125,6 +136,7 @@
         "Attr": "Brute",
         "Subtype": "Bone-Breaking Specialties",
         "Strike": 2,
+        "Priority": 1,
         "Hit Points": 11
     },
     "Crippling Blow": {
@@ -133,6 +145,7 @@
         "Attr": "Brute",
         "Subtype": "Bone-Breaking Specialties",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 9
     },
     "Combo Flow": {
@@ -159,6 +172,7 @@
         "Attr": "Brute",
         "Subtype": "Combo Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Finisher": {
@@ -167,6 +181,7 @@
         "Attr": "Brute",
         "Subtype": "Combo Specialties",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 9
     },
     "Crushing Grip": {
@@ -175,6 +190,7 @@
         "Attr": "Brute",
         "Subtype": "Grip Specialties",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 10
     },
     "Twist": {
@@ -186,11 +202,12 @@
         "Strike": 2,
         "Hit Points": 10
     },
-    "Adrenaline Surge\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,": {
-        "Name": "Adrenaline Surge\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,",
+    "Adrenaline Surge": {
+        "Name": "Adrenaline Surge",
         "Skill": "Frenzy",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
         "Strike": 1,
         "Hit Points": 14
     },
@@ -209,6 +226,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 11
     },
     "Carry Through": {
@@ -226,13 +244,15 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 10
     },
-    "Fray Fighter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,": {
-        "Name": "Fray Fighter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,",
+    "Fray Fighter": {
+        "Name": "Fray Fighter",
         "Skill": "Frenzy",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
         "Strike": 2,
         "Hit Points": 10
     },
@@ -245,11 +265,12 @@
         "Strike": 2,
         "Hit Points": 10
     },
-    "Liberator\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2,": {
-        "Name": "Liberator\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2,",
+    "Liberator": {
+        "Name": "Liberator",
         "Skill": "Frenzy",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 2,
         "Strike": 2,
         "Hit Points": 10
     },
@@ -268,6 +289,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Speed": 5,
         "Hit Points": 11
     },
     "No Escape": {
@@ -276,6 +298,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Speed": 5,
         "Hit Points": 10
     },
     "Raging": {
@@ -284,6 +307,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 2,
         "Hit Points": 9
     },
     "Straining Blow": {
@@ -310,6 +334,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Speed": 5,
         "Hit Points": 10
     },
     "Berserker": {
@@ -345,6 +370,7 @@
         "Attr": "Brute",
         "Subtype": "Masochistic Specialties",
         "Strike": 2,
+        "Priority": 2,
         "Hit Points": 10
     },
     "Marriage to Suffering": {
@@ -353,6 +379,7 @@
         "Attr": "Brute",
         "Subtype": "Masochistic Specialties",
         "Strike": 2,
+        "Wounds": 1,
         "Hit Points": 11
     },
     "Seize Your Suffering": {
@@ -361,6 +388,7 @@
         "Attr": "Brute",
         "Subtype": "Masochistic Specialties",
         "Strike": 2,
+        "Wounds": 2,
         "Hit Points": 11
     },
     "Brickbreaker": {
@@ -369,6 +397,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 10
     },
     "Dragging": {
@@ -413,6 +442,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Defense": 1,
         "Hit Points": 10
     },
     "No Quarter": {
@@ -421,6 +451,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 11
     },
     "One-Handing It": {
@@ -456,6 +487,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 11
     },
     "Stunning Blow": {
@@ -482,6 +514,7 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 10
     },
     "Chipping Away": {
@@ -517,6 +550,7 @@
         "Attr": "Brute",
         "Subtype": "Earth-Shattering Specialties",
         "Strike": 3,
+        "Priority": 1,
         "Hit Points": 11
     },
     "Staggering Strike": {
@@ -534,20 +568,25 @@
         "Attr": "Brute",
         "Subtype": "Push Away Specialties",
         "Strike": 2,
+        "Speed": 5,
         "Hit Points": 11
     },
-    "Blast Proof\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Blast Proof\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Blast Proof": {
+        "Name": "Blast Proof",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 14
     },
-    "Body of Steel\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Wounds +1,": {
-        "Name": "Body of Steel\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Wounds +1,",
+    "Body of Steel": {
+        "Name": "Body of Steel",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Defense": 3,
+        "Wounds": 1,
         "Hit Points": 14
     },
     "Brace for Impact": {
@@ -556,34 +595,43 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 3,
         "Hit Points": 15
     },
-    "Bulwark\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Bulwark\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Bulwark": {
+        "Name": "Bulwark",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 13
     },
-    "Interposition\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,": {
-        "Name": "Interposition\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,",
+    "Interposition": {
+        "Name": "Interposition",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Defense": 2,
+        "Speed": 5,
         "Hit Points": 13
     },
-    "Metal Embrace\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Metal Embrace\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Metal Embrace": {
+        "Name": "Metal Embrace",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 15
     },
-    "Never Off-Guard\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Never Off-Guard\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Never Off-Guard": {
+        "Name": "Never Off-Guard",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 17
     },
     "Press": {
@@ -592,48 +640,61 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Defense": 2,
         "Hit Points": 11
     },
-    "Protector\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Protector\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Protector": {
+        "Name": "Protector",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 14
     },
-    "Resolute\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +1, Wounds +1,": {
-        "Name": "Resolute\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +1, Wounds +1,",
+    "Resolute": {
+        "Name": "Resolute",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Defense": 1,
+        "Wounds": 1,
         "Hit Points": 13
     },
-    "Second Skin\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Second Skin\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Second Skin": {
+        "Name": "Second Skin",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 14
     },
-    "Solid Stances\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Solid Stances\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Solid Stances": {
+        "Name": "Solid Stances",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 13
     },
-    "Thick Skin\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Wounds +1,": {
-        "Name": "Thick Skin\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Wounds +1,",
+    "Thick Skin": {
+        "Name": "Thick Skin",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Defense": 3,
+        "Wounds": 1,
         "Hit Points": 11
     },
-    "Tough Stuff\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,": {
-        "Name": "Tough Stuff\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,",
+    "Tough Stuff": {
+        "Name": "Tough Stuff",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Defense": 2,
+        "Wounds": 1,
         "Hit Points": 19
     },
     "Unassailable Mountain": {
@@ -642,13 +703,16 @@
         "Attr": "Brute",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 3,
         "Hit Points": 12
     },
-    "Walking Fortress\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,": {
-        "Name": "Walking Fortress\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,",
+    "Walking Fortress": {
+        "Name": "Walking Fortress",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "",
+        "Defense": 2,
+        "Wounds": 1,
         "Hit Points": 13
     },
     "Ward": {
@@ -657,41 +721,52 @@
         "Attr": "Brute",
         "Subtype": "",
         "Strike": 2,
+        "Defense": 2,
         "Hit Points": 11
     },
-    "Armored Ease\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Armored Ease\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Armored Ease": {
+        "Name": "Armored Ease",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "Armored Movement Specialties",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 12
     },
-    "Armored Freedom\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,": {
-        "Name": "Armored Freedom\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,",
+    "Armored Freedom": {
+        "Name": "Armored Freedom",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "Armored Movement Specialties",
+        "Defense": 2,
+        "Speed": 5,
         "Hit Points": 14
     },
-    "Living Barrier\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +1,": {
-        "Name": "Living Barrier\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +1,",
+    "Living Barrier": {
+        "Name": "Living Barrier",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "Barrier Specialties",
+        "Defense": 3,
+        "Priority": 1,
         "Hit Points": 12
     },
-    "Living Wall\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,": {
-        "Name": "Living Wall\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,",
+    "Living Wall": {
+        "Name": "Living Wall",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "Barrier Specialties",
+        "Defense": 2,
+        "Wounds": 1,
         "Hit Points": 14
     },
-    "Living Stronghold\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,": {
-        "Name": "Living Stronghold\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Wounds +1,",
+    "Living Stronghold": {
+        "Name": "Living Stronghold",
         "Skill": "Resilience",
         "Attr": "Brute",
         "Subtype": "Barrier Specialties",
+        "Defense": 2,
+        "Wounds": 1,
         "Hit Points": 15
     },
     "Destabilizing Strike": {
@@ -709,6 +784,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 7
     },
     "First Strike": {
@@ -717,6 +793,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 4,
         "Hit Points": 5
     },
     "Flowing Shadow": {
@@ -725,6 +802,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
     "Heartseeker": {
@@ -745,11 +823,13 @@
         "Strike": 1,
         "Hit Points": 7
     },
-    "Master Lockpick\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Master Lockpick\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Master Lockpick": {
+        "Name": "Master Lockpick",
         "Skill": "Espionage",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 7
     },
     "Pierce the Darkness": {
@@ -758,6 +838,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Silent Kill": {
@@ -766,6 +847,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 6
     },
     "Sinister Strike": {
@@ -792,13 +874,16 @@
         "Attr": "Cunning",
         "Subtype": "Nightwalker Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
-    "Cover Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Cover Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Cover Expert": {
+        "Name": "Cover Expert",
         "Skill": "Espionage",
         "Attr": "Cunning",
         "Subtype": "Cover User Specialties",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 5
     },
     "Contort": {
@@ -807,6 +892,7 @@
         "Attr": "Cunning",
         "Subtype": "Cover User Specialties",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 6
     },
     "Critical Hits": {
@@ -833,13 +919,16 @@
         "Attr": "Cunning",
         "Subtype": "Critical Specialties",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
-    "Dirt in the Eyes\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Dirt in the Eyes\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Dirt in the Eyes": {
+        "Name": "Dirt in the Eyes",
         "Skill": "Espionage",
         "Attr": "Cunning",
         "Subtype": "Dirt in the Eyes Specialties",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Blind & Swing": {
@@ -857,6 +946,7 @@
         "Attr": "Cunning",
         "Subtype": "Disorienting Specialties",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Taking Advantage": {
@@ -883,20 +973,25 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
-    "Concentrated Focus\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Concentrated Focus\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Concentrated Focus": {
+        "Name": "Concentrated Focus",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 10
     },
-    "Deep Breath\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Deep Breath\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Deep Breath": {
+        "Name": "Deep Breath",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
     "Demoman": {
@@ -908,18 +1003,22 @@
         "Strike": 3,
         "Hit Points": 8
     },
-    "Efficiency Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +3, DIY +3,": {
-        "Name": "Efficiency Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +3, DIY +3,",
+    "Efficiency Expert": {
+        "Name": "Efficiency Expert",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Priority": 3,
+        "DIY": 3,
         "Hit Points": 8
     },
-    "Fire Fighter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Priority +2,": {
-        "Name": "Fire Fighter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Priority +2,",
+    "Fire Fighter": {
+        "Name": "Fire Fighter",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Defense": 2,
+        "Priority": 2,
         "Hit Points": 12
     },
     "Hurl": {
@@ -940,25 +1039,31 @@
         "Strike": 2,
         "Hit Points": 10
     },
-    "Mechanic\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Mechanic\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Mechanic": {
+        "Name": "Mechanic",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 8
     },
-    "Patch the Bleeding\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Priority +2,": {
-        "Name": "Patch the Bleeding\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Priority +2,",
+    "Patch the Bleeding": {
+        "Name": "Patch the Bleeding",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Defense": 2,
+        "Priority": 2,
         "Hit Points": 11
     },
-    "Observance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Observance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Observance": {
+        "Name": "Observance",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 10
     },
     "Weak Point": {
@@ -967,6 +1072,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Trick Counter": {
@@ -975,6 +1081,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Poison Finder": {
@@ -983,20 +1090,25 @@
         "Attr": "Cunning",
         "Subtype": "Anti-Poison Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 11
     },
-    "Remove Poison\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +2,": {
-        "Name": "Remove Poison\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +2,",
+    "Remove Poison": {
+        "Name": "Remove Poison",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "Anti-Poison Specialties",
+        "Defense": 3,
+        "Priority": 2,
         "Hit Points": 10
     },
-    "Combat Insights\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Combat Insights\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Combat Insights": {
+        "Name": "Combat Insights",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "Combat Insights Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 11
     },
     "Combat Analytics": {
@@ -1005,6 +1117,7 @@
         "Attr": "Cunning",
         "Subtype": "Combat Insights Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 10
     },
     "Weapon Appropriations": {
@@ -1013,6 +1126,7 @@
         "Attr": "Cunning",
         "Subtype": "Item Appropriation Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Quality Weapon": {
@@ -1024,32 +1138,40 @@
         "Strike": 3,
         "Hit Points": 7
     },
-    "Field Surgeon\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +2, Defense +2,": {
-        "Name": "Field Surgeon\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +2, Defense +2,",
+    "Field Surgeon": {
+        "Name": "Field Surgeon",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "Surgery Specialties",
+        "Priority": 2,
+        "Defense": 2,
         "Hit Points": 10
     },
-    "First Aid\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,": {
-        "Name": "First Aid\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,",
+    "First Aid": {
+        "Name": "First Aid",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "Surgery Specialties",
+        "Defense": 2,
+        "Speed": 5,
         "Hit Points": 9
     },
-    "Self-Surgery\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +3, Wounds +1,": {
-        "Name": "Self-Surgery\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +3, Wounds +1,",
+    "Self-Surgery": {
+        "Name": "Self-Surgery",
         "Skill": "Expertise",
         "Attr": "Cunning",
         "Subtype": "Surgery Specialties",
+        "Priority": 3,
+        "Wounds": 1,
         "Hit Points": 9
     },
-    "Blindside\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Blindside\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Blindside": {
+        "Name": "Blindside",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
     "Captive Audience": {
@@ -1058,6 +1180,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Catchphrase": {
@@ -1066,20 +1189,25 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
-    "Chime In\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Chime In\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Chime In": {
+        "Name": "Chime In",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
-    "Conveyor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Conveyor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Conveyor": {
+        "Name": "Conveyor",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 9
     },
     "Deafening Roar": {
@@ -1088,13 +1216,16 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Strike": 2,
+        "Defense": 2,
         "Hit Points": 10
     },
-    "Distract\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Distract\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Distract": {
+        "Name": "Distract",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 7
     },
     "Jester": {
@@ -1103,6 +1234,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Marionette Strings": {
@@ -1111,6 +1243,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 2,
         "Hit Points": 6
     },
     "Praise": {
@@ -1119,48 +1252,61 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Sleight of Hand\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +2,": {
-        "Name": "Sleight of Hand\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +2,",
+    "Sleight of Hand": {
+        "Name": "Sleight of Hand",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 2,
+        "Priority": 2,
         "Hit Points": 6
     },
-    "Smoke & Mirrors\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Smoke & Mirrors\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Smoke & Mirrors": {
+        "Name": "Smoke & Mirrors",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 7
     },
-    "Throw Off Balance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Throw Off Balance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Throw Off Balance": {
+        "Name": "Throw Off Balance",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
-    "Unmarred Perfection\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Unmarred Perfection\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Unmarred Perfection": {
+        "Name": "Unmarred Perfection",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
-    "Epic Dance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Epic Dance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Epic Dance": {
+        "Name": "Epic Dance",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "Choreographed Specialties",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
-    "Never Stop the Dance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Never Stop the Dance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Never Stop the Dance": {
+        "Name": "Never Stop the Dance",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "Choreographed Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
     "Battle Theme": {
@@ -1169,13 +1315,16 @@
         "Attr": "Cunning",
         "Subtype": "Epic Music Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Heavenly Serenade\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Heavenly Serenade\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Heavenly Serenade": {
+        "Name": "Heavenly Serenade",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "Epic Music Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
     "Spotlight": {
@@ -1184,6 +1333,7 @@
         "Attr": "Cunning",
         "Subtype": "Epic Music Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Unified Chorus": {
@@ -1204,18 +1354,22 @@
         "Strike": 2,
         "Hit Points": 9
     },
-    "Smokescreen\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Smokescreen\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Smokescreen": {
+        "Name": "Smokescreen",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "Smokescreen Specialties",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
-    "Walking Darkness\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Walking Darkness\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Walking Darkness": {
+        "Name": "Walking Darkness",
         "Skill": "Showmanship",
         "Attr": "Cunning",
         "Subtype": "Smokescreen Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 7
     },
     "Ally of the Machine": {
@@ -1224,13 +1378,16 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
-    "Armistice\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Armistice\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Armistice": {
+        "Name": "Armistice",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
     "Blitzkreig": {
@@ -1239,6 +1396,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Speed": 5,
         "Hit Points": 8
     },
     "Call in a Favor": {
@@ -1247,20 +1405,25 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Change Formation\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Change Formation\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Change Formation": {
+        "Name": "Change Formation",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 7
     },
-    "Change Places\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Change Places\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Change Places": {
+        "Name": "Change Places",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 6
     },
     "Crippling Formation": {
@@ -1287,6 +1450,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 4,
         "Hit Points": 6
     },
     "Focused Support": {
@@ -1298,11 +1462,13 @@
         "Strike": 2,
         "Hit Points": 6
     },
-    "Lead the March\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Speed +5, Priority +2,": {
-        "Name": "Lead the March\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Speed +5, Priority +2,",
+    "Lead the March": {
+        "Name": "Lead the March",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "",
+        "Speed": 5,
+        "Priority": 2,
         "Hit Points": 6
     },
     "Malleable Formation": {
@@ -1311,6 +1477,7 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Speed": 5,
         "Hit Points": 7
     },
     "Master Tactician": {
@@ -1319,27 +1486,34 @@
         "Attr": "Cunning",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
-    "Stand-Off\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Stand-Off\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Stand-Off": {
+        "Name": "Stand-Off",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 6
     },
-    "Encouragement\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Encouragement\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Encouragement": {
+        "Name": "Encouragement",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "Encouraging Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 6
     },
-    "Inspiring Words\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Inspiring Words\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Inspiring Words": {
+        "Name": "Inspiring Words",
         "Skill": "Tactical",
         "Attr": "Cunning",
         "Subtype": "Encouraging Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
     "Direct the Battle": {
@@ -1348,6 +1522,7 @@
         "Attr": "Cunning",
         "Subtype": "Flow of Battle Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Concentrated Barrage": {
@@ -1365,6 +1540,7 @@
         "Attr": "Cunning",
         "Subtype": "Flow of Battle Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Issue Orders": {
@@ -1373,6 +1549,7 @@
         "Attr": "Cunning",
         "Subtype": "Order Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Complex Orders": {
@@ -1381,6 +1558,7 @@
         "Attr": "Cunning",
         "Subtype": "Order Specialties",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
     "Improved Orders": {
@@ -1389,6 +1567,7 @@
         "Attr": "Cunning",
         "Subtype": "Order Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Backseat Driver": {
@@ -1397,6 +1576,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Co-Pilot": {
@@ -1405,6 +1585,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 3,
         "Hit Points": 8
     },
     "Crash Maneuver": {
@@ -1413,13 +1594,16 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 3,
         "Hit Points": 9
     },
-    "Denial Maneuver\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Denial Maneuver\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Denial Maneuver": {
+        "Name": "Denial Maneuver",
         "Skill": "Ace",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Driving with Knees": {
@@ -1428,6 +1612,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Flying Fortress": {
@@ -1436,13 +1621,16 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 3,
         "Hit Points": 7
     },
-    "Hold Together\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Hold Together\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Hold Together": {
+        "Name": "Hold Together",
         "Skill": "Ace",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 8
     },
     "Horseman\u2019s Cut": {
@@ -1469,6 +1657,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
     "Quick-Mount": {
@@ -1477,6 +1666,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
     "Vehicular Teamwork": {
@@ -1485,6 +1675,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 10
     },
     "Strafe": {
@@ -1493,13 +1684,16 @@
         "Attr": "Dexterity",
         "Subtype": "Auto Piloting Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
-    "Evasive Strafe\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Evasive Strafe\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Evasive Strafe": {
+        "Name": "Evasive Strafe",
         "Skill": "Ace",
         "Attr": "Dexterity",
         "Subtype": "Auto Piloting Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 7
     },
     "Extension of Self": {
@@ -1508,13 +1702,16 @@
         "Attr": "Dexterity",
         "Subtype": "Clanker Piloting Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
-    "Piston-Spring\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Piston-Spring\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Piston-Spring": {
+        "Name": "Piston-Spring",
         "Skill": "Ace",
         "Attr": "Dexterity",
         "Subtype": "Clanker Piloting Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 10
     },
     "Focused Flying": {
@@ -1523,13 +1720,16 @@
         "Attr": "Dexterity",
         "Subtype": "Focusing Flying Specialties",
         "Accuracy": 1,
+        "Defense": 3,
         "Hit Points": 8
     },
-    "Fine-Tuned Flying\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +2,": {
-        "Name": "Fine-Tuned Flying\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +2,",
+    "Fine-Tuned Flying": {
+        "Name": "Fine-Tuned Flying",
         "Skill": "Ace",
         "Attr": "Dexterity",
         "Subtype": "Focusing Flying Specialties",
+        "Defense": 3,
+        "Priority": 2,
         "Hit Points": 7
     },
     "Fully Focused Flying": {
@@ -1538,6 +1738,7 @@
         "Attr": "Dexterity",
         "Subtype": "Focusing Flying Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Fearless Mount": {
@@ -1546,6 +1747,7 @@
         "Attr": "Dexterity",
         "Subtype": "Mounted Cavalry Specialties",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
     "One with the Beast": {
@@ -1554,6 +1756,7 @@
         "Attr": "Dexterity",
         "Subtype": "Mounted Cavalry Specialties",
         "Strike": 2,
+        "Defense": 2,
         "Hit Points": 10
     },
     "Ram": {
@@ -1571,13 +1774,16 @@
         "Attr": "Dexterity",
         "Subtype": "Ramming Specialties",
         "Accuracy": 1,
+        "Defense": 3,
         "Hit Points": 9
     },
-    "Battlefield Flow\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Battlefield Flow\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Battlefield Flow": {
+        "Name": "Battlefield Flow",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 7
     },
     "Bounding Lunge": {
@@ -1586,6 +1792,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Speed": 5,
         "Hit Points": 7
     },
     "Charging Ram": {
@@ -1594,20 +1801,25 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Strike": 2,
+        "Speed": 5,
         "Hit Points": 6
     },
-    "Free Movement\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +2, Speed +5,": {
-        "Name": "Free Movement\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +2, Speed +5,",
+    "Free Movement": {
+        "Name": "Free Movement",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Priority": 2,
+        "Speed": 5,
         "Hit Points": 6
     },
-    "Groundfighting\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +2,": {
-        "Name": "Groundfighting\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +2,",
+    "Groundfighting": {
+        "Name": "Groundfighting",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 2,
+        "Priority": 2,
         "Hit Points": 7
     },
     "Instant Draw": {
@@ -1616,6 +1828,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 7
     },
     "Slow Falling": {
@@ -1624,6 +1837,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 6
     },
     "Side-Swipe": {
@@ -1632,6 +1846,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Slipstreaming": {
@@ -1640,6 +1855,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Speed": 5,
         "Hit Points": 8
     },
     "Snake Bite": {
@@ -1648,6 +1864,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 7
     },
     "Step Back": {
@@ -1656,13 +1873,16 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Terrain Mastery\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +4, Speed +5,": {
-        "Name": "Terrain Mastery\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +4, Speed +5,",
+    "Terrain Mastery": {
+        "Name": "Terrain Mastery",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Priority": 4,
+        "Speed": 5,
         "Hit Points": 9
     },
     "Wall Runner": {
@@ -1671,48 +1891,61 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Speed": 5,
         "Hit Points": 8
     },
-    "Walk Over\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Walk Over\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Walk Over": {
+        "Name": "Walk Over",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 7
     },
-    "Blast Dodger\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Blast Dodger\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Blast Dodger": {
+        "Name": "Blast Dodger",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "Explosion Dodging Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 8
     },
-    "Soaring Dodge\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Soaring Dodge\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Soaring Dodge": {
+        "Name": "Soaring Dodge",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "Explosion Dodging Specialties",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 9
     },
-    "Phase Step\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Phase Step\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Phase Step": {
+        "Name": "Phase Step",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "Phasing Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 7
     },
-    "Fleeting Shade\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Fleeting Shade\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Fleeting Shade": {
+        "Name": "Fleeting Shade",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "Phasing Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 6
     },
-    "Leave No Trace\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Leave No Trace\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Leave No Trace": {
+        "Name": "Leave No Trace",
         "Skill": "Agility",
         "Attr": "Dexterity",
         "Subtype": "Phasing Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 6
     },
     "Shifting": {
@@ -1721,6 +1954,7 @@
         "Attr": "Dexterity",
         "Subtype": "Stance-Shifting Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Freeform Shifting": {
@@ -1729,6 +1963,7 @@
         "Attr": "Dexterity",
         "Subtype": "Stance-Shifting Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Aim": {
@@ -1737,6 +1972,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Evade": 1,
         "Hit Points": 5
     },
     "Cover Fire": {
@@ -1745,6 +1981,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 6
     },
     "Follow Up": {
@@ -1753,6 +1990,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Head Popper": {
@@ -1761,13 +1999,16 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Itchy Trigger Finger\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +3,": {
-        "Name": "Itchy Trigger Finger\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +3,",
+    "Itchy Trigger Finger": {
+        "Name": "Itchy Trigger Finger",
         "Skill": "Marksmanship",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 2,
+        "Priority": 3,
         "Hit Points": 8
     },
     "Knock-Off": {
@@ -1776,6 +2017,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 2,
         "Hit Points": 6
     },
     "Lockdown Gunner": {
@@ -1784,6 +2026,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
     "Long Shot": {
@@ -1792,6 +2035,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Penetrating Shot": {
@@ -1800,6 +2044,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Point Blank": {
@@ -1808,6 +2053,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Seeker": {
@@ -1816,6 +2062,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Snap Reload": {
@@ -1824,6 +2071,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 4,
         "Hit Points": 6
     },
     "Sneaky Seconds": {
@@ -1832,6 +2080,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Stable Shot": {
@@ -1840,6 +2089,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 2,
         "Hit Points": 8
     },
     "Turret": {
@@ -1848,6 +2098,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 5
     },
     "Warning Shot": {
@@ -1856,6 +2107,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
     "Wing Clipping": {
@@ -1864,6 +2116,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 2,
+        "Evade": 1,
         "Hit Points": 6
     },
     "Arching Shot": {
@@ -1917,6 +2170,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Circle Attack": {
@@ -1943,13 +2197,16 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
-    "Fight Anywhere\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Speed +5,": {
-        "Name": "Fight Anywhere\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Speed +5,",
+    "Fight Anywhere": {
+        "Name": "Fight Anywhere",
         "Skill": "Swashbuckling",
         "Attr": "Dexterity",
         "Subtype": "",
+        "Evade": 2,
+        "Speed": 5,
         "Hit Points": 6
     },
     "Hilt Bash": {
@@ -1967,6 +2224,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 2,
         "Hit Points": 6
     },
     "Precise Attack": {
@@ -1984,6 +2242,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
     "Sword and Board": {
@@ -1992,6 +2251,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Wild Slash": {
@@ -2000,6 +2260,7 @@
         "Attr": "Dexterity",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 3,
         "Hit Points": 8
     },
     "En-Garde": {
@@ -2008,6 +2269,7 @@
         "Attr": "Dexterity",
         "Subtype": "En-Garde Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Find the Gap": {
@@ -2025,6 +2287,7 @@
         "Attr": "Dexterity",
         "Subtype": "En-Garde Specialties",
         "Accuracy": 2,
+        "Priority": 2,
         "Hit Points": 8
     },
     "Flickering": {
@@ -2033,6 +2296,7 @@
         "Attr": "Dexterity",
         "Subtype": "Flickering Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Torrent of Steel": {
@@ -2041,20 +2305,25 @@
         "Attr": "Dexterity",
         "Subtype": "Flickering Specialties",
         "Accuracy": 1,
+        "Priority": 2,
         "Hit Points": 7
     },
-    "Footwork Training\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +3, Speed +5,": {
-        "Name": "Footwork Training\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +3, Speed +5,",
+    "Footwork Training": {
+        "Name": "Footwork Training",
         "Skill": "Swashbuckling",
         "Attr": "Dexterity",
         "Subtype": "Footwork Specialties",
+        "Priority": 3,
+        "Speed": 5,
         "Hit Points": 8
     },
-    "Fancy Footwork\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Fancy Footwork\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Fancy Footwork": {
+        "Name": "Fancy Footwork",
         "Skill": "Swashbuckling",
         "Attr": "Dexterity",
         "Subtype": "Footwork Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 9
     },
     "Parry": {
@@ -2081,6 +2350,7 @@
         "Attr": "Dexterity",
         "Subtype": "Parry & Riposte Specialties",
         "Accuracy": 1,
+        "Speed": 5,
         "Hit Points": 8
     },
     "Experienced Parries": {
@@ -2101,11 +2371,13 @@
         "Strike": 2,
         "Hit Points": 8
     },
-    "Blind Faith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Blind Faith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Blind Faith": {
+        "Name": "Blind Faith",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
     "Conviction": {
@@ -2123,34 +2395,43 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Strike": 2,
+        "Defense": 2,
         "Hit Points": 9
     },
-    "Flowing Vigor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Flowing Vigor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Flowing Vigor": {
+        "Name": "Flowing Vigor",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
-    "Grief & Hope\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Grief & Hope\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Grief & Hope": {
+        "Name": "Grief & Hope",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
-    "Healing Halo\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Healing Halo\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Healing Halo": {
+        "Name": "Healing Halo",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 10
     },
-    "Infallible Faith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Infallible Faith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Infallible Faith": {
+        "Name": "Infallible Faith",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 8
     },
     "Moral Support": {
@@ -2159,6 +2440,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Prayer": {
@@ -2167,49 +2449,61 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
-    "Purify\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Purify\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Purify": {
+        "Name": "Purify",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
-    "Shock of Life\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Shock of Life\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Shock of Life": {
+        "Name": "Shock of Life",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 11
     },
-    "Devoted Peers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Devoted Peers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Devoted Peers": {
+        "Name": "Devoted Peers",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "AP Sacrifice Upgrade Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 10
     },
-    "Self-Sacrifice\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,": {
-        "Name": "Self-Sacrifice\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,",
+    "Self-Sacrifice": {
+        "Name": "Self-Sacrifice",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "AP Sacrifice Upgrade Specialties",
+        "Evade": 1,
         "Strike": 2,
         "Hit Points": 8
     },
-    "Silent Devotion\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Silent Devotion\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Silent Devotion": {
+        "Name": "Silent Devotion",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "AP Sacrifice Upgrade Specialties",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
-    "Appointed Champion\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Appointed Champion\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Appointed Champion": {
+        "Name": "Appointed Champion",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "Champion Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
     "Conduit of Faith": {
@@ -2218,13 +2512,15 @@
         "Attr": "Spirit",
         "Subtype": "Champion Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
-    "Proclaim the Heretic\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,": {
-        "Name": "Proclaim the Heretic\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,",
+    "Proclaim the Heretic": {
+        "Name": "Proclaim the Heretic",
         "Skill": "Faith",
         "Attr": "Spirit",
         "Subtype": "Inquisition Specialties",
+        "Evade": 1,
         "Strike": 2,
         "Hit Points": 8
     },
@@ -2234,6 +2530,7 @@
         "Attr": "Spirit",
         "Subtype": "Inquisition Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Smite": {
@@ -2251,6 +2548,7 @@
         "Attr": "Spirit",
         "Subtype": "Smiting Specialties",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
     "Impassioned Victory": {
@@ -2268,6 +2566,7 @@
         "Attr": "Spirit",
         "Subtype": "Smiting Specialties",
         "Accuracy": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
     "Zealous Smite": {
@@ -2279,11 +2578,13 @@
         "Strike": 2,
         "Hit Points": 7
     },
-    "Bloodsoak\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Bloodsoak\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Bloodsoak": {
+        "Name": "Bloodsoak",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
     "Connection": {
@@ -2292,13 +2593,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 7
     },
-    "Danger Sense\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +5,": {
-        "Name": "Danger Sense\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +5,",
+    "Danger Sense": {
+        "Name": "Danger Sense",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 5,
         "Hit Points": 9
     },
     "Destabilize": {
@@ -2310,11 +2614,13 @@
         "Strike": 2,
         "Hit Points": 8
     },
-    "Dispel Pain\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Dispel Pain\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Dispel Pain": {
+        "Name": "Dispel Pain",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 9
     },
     "Force of Self": {
@@ -2323,13 +2629,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Inner Calm\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Inner Calm\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Inner Calm": {
+        "Name": "Inner Calm",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 10
     },
     "Iron Palm": {
@@ -2347,13 +2656,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
-    "Parting Waves\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Parting Waves\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Parting Waves": {
+        "Name": "Parting Waves",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 8
     },
     "Shocking Soul": {
@@ -2371,6 +2683,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Spiritual Seal": {
@@ -2379,6 +2692,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Void Strike": {
@@ -2390,27 +2704,31 @@
         "Strike": 2,
         "Hit Points": 10
     },
-    "Ki Flow\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,": {
-        "Name": "Ki Flow\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,",
+    "Ki Flow": {
+        "Name": "Ki Flow",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "Ki-Unleashing Specialties",
+        "Evade": 1,
         "Strike": 1,
         "Hit Points": 10
     },
-    "Ki Rage\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,": {
-        "Name": "Ki Rage\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1,",
+    "Ki Rage": {
+        "Name": "Ki Rage",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "Ki-Unleashing Specialties",
+        "Evade": 1,
         "Strike": 2,
         "Hit Points": 8
     },
-    "Feather in the Wind\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Feather in the Wind\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
+    "Feather in the Wind": {
+        "Name": "Feather in the Wind",
         "Skill": "Grace",
         "Attr": "Spirit",
         "Subtype": "Light-as-Air Specialties",
+        "Evade": 1,
+        "Speed": 5,
         "Hit Points": 6
     },
     "Weightless": {
@@ -2419,6 +2737,7 @@
         "Attr": "Spirit",
         "Subtype": "Light-as-Air Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Touch of Paralysis": {
@@ -2445,13 +2764,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Don\u2019t Tell Me the Odds\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +2,": {
-        "Name": "Don\u2019t Tell Me the Odds\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +2,",
+    "Don\u2019t Tell Me the Odds": {
+        "Name": "Don\u2019t Tell Me the Odds",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 2,
+        "Priority": 2,
         "Hit Points": 6
     },
     "Cheat Fate": {
@@ -2460,6 +2782,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 2,
+        "Evade": 1,
         "Hit Points": 6
     },
     "Equalizing Force": {
@@ -2468,13 +2791,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
-    "Hex\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Hex\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Hex": {
+        "Name": "Hex",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 3,
         "Hit Points": 7
     },
     "Jackpot": {
@@ -2501,6 +2827,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 8
     },
     "Roulette": {
@@ -2509,6 +2836,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
     "Spot of Misfortune": {
@@ -2517,13 +2845,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
-    "Free from Failure\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Free from Failure\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Free from Failure": {
+        "Name": "Free from Failure",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Failure Avoidance Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 7
     },
     "Steady Friends": {
@@ -2532,13 +2863,16 @@
         "Attr": "Spirit",
         "Subtype": "Failure Avoidance Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
-    "Curse\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Curse\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Curse": {
+        "Name": "Curse",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Foul Luck Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
     "Fumble": {
@@ -2547,13 +2881,16 @@
         "Attr": "Spirit",
         "Subtype": "Foul Luck Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
-    "Ace Up My Sleeve\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Ace Up My Sleeve\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Ace Up My Sleeve": {
+        "Name": "Ace Up My Sleeve",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Luck Holder Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 6
     },
     "Leading the Lucky Life": {
@@ -2562,34 +2899,43 @@
         "Attr": "Spirit",
         "Subtype": "Luck Holder Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
-    "Second Chance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Wounds +1,": {
-        "Name": "Second Chance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Wounds +1,",
+    "Second Chance": {
+        "Name": "Second Chance",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Luck Holder Specialties",
+        "Evade": 1,
+        "Wounds": 1,
         "Hit Points": 10
     },
-    "Lucky Number 7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Lucky Number 7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Lucky Number 7": {
+        "Name": "Lucky Number 7",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Lucky #7 Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 6
     },
-    "Luckier Number 7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Luckier Number 7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Luckier Number 7": {
+        "Name": "Luckier Number 7",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Lucky #7 Specialties",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 7
     },
-    "Feeling Lucky\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,": {
-        "Name": "Feeling Lucky\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Priority +1,",
+    "Feeling Lucky": {
+        "Name": "Feeling Lucky",
         "Skill": "Luck",
         "Attr": "Spirit",
         "Subtype": "Ranged Evading Specialties",
+        "Evade": 2,
+        "Priority": 1,
         "Hit Points": 6
     },
     "Unfriendly Fire": {
@@ -2598,6 +2944,7 @@
         "Attr": "Spirit",
         "Subtype": "Ranged Evading Specialties",
         "Accuracy": 1,
+        "Evade": 2,
         "Hit Points": 5
     },
     "Unfriendly Artillery": {
@@ -2606,6 +2953,7 @@
         "Attr": "Spirit",
         "Subtype": "Ranged Evading Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Control Beast": {
@@ -2614,6 +2962,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Druidic": {
@@ -2625,11 +2974,13 @@
         "Strike": 2,
         "Hit Points": 8
     },
-    "Fire Resistance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Fire Resistance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Fire Resistance": {
+        "Name": "Fire Resistance",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 10
     },
     "Geomancer": {
@@ -2638,6 +2989,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Hardened Trainer": {
@@ -2646,6 +2998,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Defense": 2,
         "Hit Points": 10
     },
     "Lion\u2019s Roar": {
@@ -2654,13 +3007,16 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 2,
         "Hit Points": 9
     },
-    "Naturalist\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Naturalist\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Naturalist": {
+        "Name": "Naturalist",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 9
     },
     "Parasite": {
@@ -2669,6 +3025,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Strike": 2,
+        "Priority": 2,
         "Hit Points": 7
     },
     "Still as Stone": {
@@ -2677,6 +3034,7 @@
         "Attr": "Spirit",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
     "Tactics of the Wolf": {
@@ -2688,11 +3046,13 @@
         "Strike": 3,
         "Hit Points": 8
     },
-    "Topographer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,": {
-        "Name": "Topographer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +2,",
+    "Topographer": {
+        "Name": "Topographer",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "",
+        "Evade": 1,
+        "Priority": 2,
         "Hit Points": 7
     },
     "Avian Wrath": {
@@ -2701,6 +3061,7 @@
         "Attr": "Spirit",
         "Subtype": "Bird Calling Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Blacken the Sky": {
@@ -2709,6 +3070,7 @@
         "Attr": "Spirit",
         "Subtype": "Bird Calling Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
     "Pitch Black": {
@@ -2717,41 +3079,52 @@
         "Attr": "Spirit",
         "Subtype": "Bird Calling Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 8
     },
-    "Venom Immunity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,": {
-        "Name": "Venom Immunity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +2,",
+    "Venom Immunity": {
+        "Name": "Venom Immunity",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "Chemical Immunity Specialties",
+        "Evade": 1,
+        "Defense": 2,
         "Hit Points": 10
     },
-    "Alchemical Resistance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Alchemical Resistance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Alchemical Resistance": {
+        "Name": "Alchemical Resistance",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "Chemical Immunity Specialties",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 9
     },
-    "Protect the Monarch\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Priority +1,": {
-        "Name": "Protect the Monarch\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Priority +1,",
+    "Protect the Monarch": {
+        "Name": "Protect the Monarch",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "Protective Swarm Specialties",
+        "Defense": 2,
+        "Priority": 1,
         "Hit Points": 9
     },
-    "Devoted Drones\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +1,": {
-        "Name": "Devoted Drones\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +3, Priority +1,",
+    "Devoted Drones": {
+        "Name": "Devoted Drones",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "Protective Swarm Specialties",
+        "Defense": 3,
+        "Priority": 1,
         "Hit Points": 10
     },
-    "Hive Exodus\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,": {
-        "Name": "Hive Exodus\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Speed +5,",
+    "Hive Exodus": {
+        "Name": "Hive Exodus",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "Protective Swarm Specialties",
+        "Defense": 2,
+        "Speed": 5,
         "Hit Points": 7
     },
     "Colony of One": {
@@ -2778,6 +3151,7 @@
         "Attr": "Spirit",
         "Subtype": "Swarming Insect Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 9
     },
     "Pressure Cooker": {
@@ -2789,11 +3163,13 @@
         "Strike": 2,
         "Hit Points": 9
     },
-    "Learn Augments\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +4, DIY +1,": {
-        "Name": "Learn Augments\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +4, DIY +1,",
+    "Learn Augments": {
+        "Name": "Learn Augments",
         "Skill": "Shamanism",
         "Attr": "Spirit",
         "Subtype": "General Science Specialties",
+        "Augments": 4,
+        "DIY": 1,
         "Hit Points": 4
     },
     "Nothing up my Sleeve": {
@@ -2802,160 +3178,213 @@
         "Attr": "Spirit",
         "Subtype": "General Science Specialties",
         "Accuracy": 1,
+        "Augments": 2,
         "Hit Points": 4
     },
-    "Self-Made Immunity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,": {
-        "Name": "Self-Made Immunity\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,",
+    "Self-Made Immunity": {
+        "Name": "Self-Made Immunity",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Immunity Specialties",
+        "Defense": 2,
+        "Augments": 1,
         "Hit Points": 8
     },
-    "Immunizations\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,": {
-        "Name": "Immunizations\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,",
+    "Immunizations": {
+        "Name": "Immunizations",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Immunity Specialties",
+        "Defense": 2,
+        "Augments": 1,
         "Hit Points": 6
     },
-    "On-the-Fly Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +2,": {
-        "Name": "On-the-Fly Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +2,",
+    "On-the-Fly Brewer": {
+        "Name": "On-the-Fly Brewer",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "On-the-Fly Specialties",
+        "Evade": 1,
+        "Augments": 2,
         "Hit Points": 4
     },
-    "Expiration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +2,": {
-        "Name": "Expiration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +2,",
+    "Expiration": {
+        "Name": "Expiration",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "On-the-Fly Specialties",
+        "Evade": 1,
+        "Augments": 2,
         "Hit Points": 4
     },
-    "Herbalist\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Herbalist\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Herbalist": {
+        "Name": "Herbalist",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "On-the-Fly Specialties",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Rapid Mixer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,": {
-        "Name": "Rapid Mixer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,",
+    "Rapid Mixer": {
+        "Name": "Rapid Mixer",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "On-the-Fly Specialties",
+        "Evade": 1,
+        "Augments": 1,
         "Hit Points": 5
     },
-    "Walking Chemical Plant\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,": {
-        "Name": "Walking Chemical Plant\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,",
+    "Walking Chemical Plant": {
+        "Name": "Walking Chemical Plant",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "On-the-Fly Specialties",
+        "Evade": 1,
+        "Augments": 1,
         "Hit Points": 5
     },
-    "Acid Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Acid Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Acid Brewer": {
+        "Name": "Acid Brewer",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Acids",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Beta Acids\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Acids\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Acids": {
+        "Name": "Beta Acids",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Acids",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Prototype Acids\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Acids\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Acids": {
+        "Name": "Prototype Acids",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Acids",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Beta Gases\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Gases\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Gas Brewer": {
+        "Name": "Gas Brewer",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Gases",
-        "Hit Points": 4
+        "Augments": 4,
+        "DIY": 1
     },
-    "Prototype Gases\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Gases\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Beta Gases": {
+        "Name": "Beta Gases",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Gases",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Medicine Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Medicine Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Prototype Gases": {
+        "Name": "Prototype Gases",
+        "Skill": "Alchemy",
+        "Attr": "Sciences",
+        "Subtype": "Crafting Gases",
+        "Augments": 1,
+        "DIY": 1,
+        "Hit Points": 4
+    },
+    "Medicine Brewer": {
+        "Name": "Medicine Brewer",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Medicines",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Beta Medicines\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Medicines\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Medicines": {
+        "Name": "Beta Medicines",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Medicines",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Prototype Medicines\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Medicines\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Medicines": {
+        "Name": "Prototype Medicines",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Medicines",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 7
     },
-    "Poison Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Poison Brewer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Poison Brewer": {
+        "Name": "Poison Brewer",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Poisons",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Poisons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Poisons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Poisons": {
+        "Name": "Beta Poisons",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Poisons",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Poisons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Poisons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Poisons": {
+        "Name": "Prototype Poisons",
         "Skill": "Alchemy",
         "Attr": "Sciences",
         "Subtype": "Crafting Poisons",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Belt Feeder\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Augments +1,": {
-        "Name": "Belt Feeder\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +2, Augments +1,",
+    "Belt Feeder": {
+        "Name": "Belt Feeder",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "",
+        "Evade": 2,
+        "Augments": 1,
         "Hit Points": 7
     },
-    "Interchangeable Parts\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +2, Augments +1,": {
-        "Name": "Interchangeable Parts\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Priority +2, Augments +1,",
-        "Skill": "Armsmith",
-        "Attr": "Sciences",
-        "Subtype": "Crafting Melee Weapons & Throwing Weapons",
-        "Hit Points": 5
-    },
-    "Rapid Replacements\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, DIY +1,": {
-        "Name": "Rapid Replacements\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, DIY +1,",
-        "Skill": "Armsmith",
+    "Interchangeable Parts": {
+        "Name": "Interchangeable Parts",
+        "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Temporary Attachments\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Temporary Attachments\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Rapid Replacements": {
+        "Name": "Rapid Replacements",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "",
+        "Evade": 1,
+        "DIY": 1,
+        "Hit Points": 6
+    },
+    "Temporary Attachments": {
+        "Name": "Temporary Attachments",
+        "Skill": "Armsmith",
+        "Attr": "Sciences",
+        "Subtype": "",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
     "Weapon Support": {
@@ -2964,146 +3393,178 @@
         "Attr": "Sciences",
         "Subtype": "",
         "Accuracy": 1,
+        "Augments": 1,
         "Hit Points": 6
     },
-    "Gunsmith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Gunsmith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Gunsmith": {
+        "Name": "Gunsmith",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Firearms & Crossbows",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Firearms\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Firearms\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Firearms": {
+        "Name": "Beta Firearms",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Firearms & Crossbows",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Firearms\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Firearms\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Firearms": {
+        "Name": "Prototype Firearms",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Firearms & Crossbows",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Crossbow Craftsman\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Crossbow Craftsman\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Crossbow Craftsman": {
+        "Name": "Crossbow Craftsman",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Firearms & Crossbows",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Crossbows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Crossbows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Crossbows": {
+        "Name": "Beta Crossbows",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Firearms & Crossbows",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Crossbows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Crossbows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Crossbows": {
+        "Name": "Prototype Crossbows",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Firearms & Crossbows",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Weapon Smith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Weapon Smith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Weapon Smith": {
+        "Name": "Weapon Smith",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Melee Weapons & Throwing Weapons",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Weapons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Weapons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Weapons": {
+        "Name": "Beta Weapons",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Melee Weapons & Throwing Weapons",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Weapons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Weapons\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Weapons": {
+        "Name": "Prototype Weapons",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Melee Weapons & Throwing Weapons",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Bowyer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Bowyer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Bowyer": {
+        "Name": "Bowyer",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Bows",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Bows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Bows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Bows": {
+        "Name": "Beta Bows",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Bows",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Bows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Bows\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Bows": {
+        "Name": "Prototype Bows",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Bows",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Armor Smith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Armor Smith\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Armor Smith": {
+        "Name": "Armor Smith",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Armor",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Beta Armor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Armor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Armor": {
+        "Name": "Beta Armor",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Armor",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Prototype Armor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Armor\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Armor": {
+        "Name": "Prototype Armor",
         "Skill": "Armsmith",
         "Attr": "Sciences",
         "Subtype": "Crafting Armor",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Automaton Repairs\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +2,": {
-        "Name": "Automaton Repairs\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +2,",
+    "Automaton Repairs": {
+        "Name": "Automaton Repairs",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "",
+        "Defense": 2,
+        "Augments": 2,
         "Hit Points": 7
     },
-    "Interchangeable Parts\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Interchangeable Parts\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
-        "Skill": "Automata",
-        "Attr": "Sciences",
-        "Subtype": "",
-        "Hit Points": 6
-    },
-    "Steam-Powered Crafter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Steam-Powered Crafter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Steam-Powered Crafter": {
+        "Name": "Steam-Powered Crafter",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Steamers",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Boilers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Boilers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Boilers": {
+        "Name": "Beta Boilers",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Steamers",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Boilers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Boilers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Boilers": {
+        "Name": "Prototype Boilers",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Steamers",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 5
     },
     "Steamer Operator": {
@@ -3112,13 +3573,16 @@
         "Attr": "Sciences",
         "Subtype": "Steamer Operator Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
-    "Steam Poser\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,": {
-        "Name": "Steam Poser\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,",
+    "Steam Poser": {
+        "Name": "Steam Poser",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Steamer Operator Specialties",
+        "Evade": 1,
+        "Augments": 1,
         "Hit Points": 7
     },
     "Steam Specialist": {
@@ -3127,133 +3591,161 @@
         "Attr": "Sciences",
         "Subtype": "Steamer Operator Specialties",
         "Accuracy": 1,
+        "Augments": 1,
         "Hit Points": 6
     },
-    "Fuse Box Builder\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Fuse Box Builder\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Fuse Box Builder": {
+        "Name": "Fuse Box Builder",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Fuse Boxes",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Advanced Brainworks\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Advanced Brainworks\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Advanced Brainworks": {
+        "Name": "Advanced Brainworks",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Fuse Boxes",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Epic Brainworks\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Epic Brainworks\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Epic Brainworks": {
+        "Name": "Epic Brainworks",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Fuse Boxes",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Heroic Brainworks\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Heroic Brainworks\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Heroic Brainworks": {
+        "Name": "Heroic Brainworks",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Fuse Boxes",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Personality\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Personality\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Personality": {
+        "Name": "Personality",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Fuse Boxes",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Clockwork Crafter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Clockwork Crafter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Clockwork Crafter": {
+        "Name": "Clockwork Crafter",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Clockworks",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Advanced Analytics\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Advanced Analytics\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Advanced Analytics": {
+        "Name": "Advanced Analytics",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Clockworks",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Prosthetician\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Prosthetician\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Prosthetician": {
+        "Name": "Prosthetician",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Prosthetics",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Beta Prosthetics\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Prosthetics\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Prosthetics": {
+        "Name": "Beta Prosthetics",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Prosthetics",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Prototype Prosthetics\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Prosthetics\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Prosthetics": {
+        "Name": "Prototype Prosthetics",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Prosthetics",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 7
     },
-    "Automata Tinkerer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Automata Tinkerer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Automata Tinkerer": {
+        "Name": "Automata Tinkerer",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Prosthetics",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Automata Upgrader\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Automata Upgrader\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Automata Upgrader": {
+        "Name": "Automata Upgrader",
         "Skill": "Automata",
         "Attr": "Sciences",
         "Subtype": "Crafting Prosthetics",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Nerve Crafting\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Nerve Crafting\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Nerve Crafting": {
+        "Name": "Nerve Crafting",
         "Skill": "Automata",
         "Attr": "Sciences",
-        "Subtype": "Nerve Crafting\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1, Hit Points +7",
+        "Subtype": "Crafting Prosthetics",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 7
     },
-    "Sensory Builder\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Sensory Builder\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Sensory Builder": {
+        "Name": "Sensory Builder",
         "Skill": "Automata",
         "Attr": "Sciences",
-        "Subtype": "Nerve Crafting\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1, Hit Points +7",
+        "Subtype": "Crafting Prosthetics",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 7
     },
-    "Bio-Invigoration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,": {
-        "Name": "Bio-Invigoration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Defense +3,",
+    "Bio-Invigoration": {
+        "Name": "Bio-Invigoration",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
         "Subtype": "Invigoration Specialties",
+        "Evade": 1,
+        "Defense": 3,
         "Hit Points": 8
     },
-    "Bio-Invigoration Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,": {
-        "Name": "Bio-Invigoration Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Priority +3,",
+    "Bio-Invigoration Expert": {
+        "Name": "Bio-Invigoration Expert",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
         "Subtype": "Invigoration Specialties",
-        "Hit Points": 9
-    },
-    "Quickshot Bio-Invigoration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,": {
-        "Name": "Quickshot Bio-Invigoration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Speed +5,",
-        "Skill": "Bio-Flux",
-        "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
-        "Hit Points": 8
-    },
-    "Bio-Invigoration Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Wounds +1,": {
-        "Name": "Bio-Invigoration Expert\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Wounds +1,",
-        "Skill": "Bio-Flux",
-        "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Evade": 1,
+        "Wounds": 1,
         "Hit Points": 11
+    },
+    "Quickshot Bio-Invigoration": {
+        "Name": "Quickshot Bio-Invigoration",
+        "Skill": "Bio-Flux",
+        "Attr": "Sciences",
+        "Subtype": "Invigoration Specialties",
+        "Evade": 1,
+        "Speed": 5,
+        "Hit Points": 8
     },
     "Self-Administer": {
         "Name": "Self-Administer",
@@ -3261,69 +3753,88 @@
         "Attr": "Sciences",
         "Subtype": "Invigoration Specialties",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 11
     },
-    "Manipulate Essence\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Manipulate Essence\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Manipulate Essence": {
+        "Name": "Manipulate Essence",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Subtype": "Essence Manipulation",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Beta Essence\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Essence\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Essence": {
+        "Name": "Beta Essence",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Subtype": "Essence Manipulation",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Prototype Essence\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Prototype Essence\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Prototype Essence": {
+        "Name": "Prototype Essence",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Subtype": "Essence Manipulation",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Fast Manipulation\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +2,": {
-        "Name": "Fast Manipulation\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +2,",
+    "Fast Manipulation": {
+        "Name": "Fast Manipulation",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Subtype": "Essence Manipulation",
+        "Evade": 1,
+        "Augments": 2,
         "Hit Points": 7
     },
-    "Body Renewal\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,": {
-        "Name": "Body Renewal\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,",
+    "Body Renewal": {
+        "Name": "Body Renewal",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Subtype": "Essence Manipulation",
+        "Defense": 2,
+        "Augments": 1,
         "Hit Points": 9
     },
-    "Gene Therapy\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, Wounds +1,": {
-        "Name": "Gene Therapy\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, Wounds +1,",
+    "Gene Therapy": {
+        "Name": "Gene Therapy",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
-        "Subtype": "Invigoration Specialties",
+        "Subtype": "Essence Manipulation",
+        "Augments": 2,
+        "Wounds": 1,
         "Hit Points": 9
     },
-    "Bio-Zapper Developer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Bio-Zapper Developer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Bio-Zapper Developer": {
+        "Name": "Bio-Zapper Developer",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Bio-Zappers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Bio-Zappers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Bio-Zappers": {
+        "Name": "Beta Bio-Zappers",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Bio-Zappers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Bio-Zappers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Bio-Zappers": {
+        "Name": "Prototype Bio-Zappers",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 4
     },
     "Concentrated Steam": {
@@ -3332,13 +3843,16 @@
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
         "Accuracy": 1,
+        "Augments": 2,
         "Hit Points": 6
     },
-    "Extra Settings\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Extra Settings\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Extra Settings": {
+        "Name": "Extra Settings",
         "Skill": "Bio-Flux",
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
     "Multi-Ray": {
@@ -3347,6 +3861,7 @@
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
         "Accuracy": 1,
+        "Augments": 1,
         "Hit Points": 6
     },
     "Splicer": {
@@ -3355,6 +3870,7 @@
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
         "Accuracy": 1,
+        "Augments": 1,
         "Hit Points": 6
     },
     "Tracing": {
@@ -3363,118 +3879,151 @@
         "Attr": "Sciences",
         "Subtype": "Crafting Bio-Zappers",
         "Accuracy": 1,
+        "Augments": 1,
         "Hit Points": 7
     },
-    "Maintenance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Maintenance\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Maintenance": {
+        "Name": "Maintenance",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Power Surge\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, Priority +3,": {
-        "Name": "Power Surge\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, Priority +3,",
+    "Power Surge": {
+        "Name": "Power Surge",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "",
+        "Augments": 1,
+        "Priority": 3,
         "Hit Points": 6
     },
-    "Quick Upgrades\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Quick Upgrades\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Quick Upgrades": {
+        "Name": "Quick Upgrades",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Vehicle Repairs\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,": {
-        "Name": "Vehicle Repairs\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Defense +2, Augments +1,",
+    "Vehicle Repairs": {
+        "Name": "Vehicle Repairs",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "",
+        "Defense": 2,
+        "Augments": 1,
         "Hit Points": 7
     },
-    "Gearhead\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Gearhead\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Gearhead": {
+        "Name": "Gearhead",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Grease Monkey Specialties",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Gearjunkie\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, Evade +1,": {
-        "Name": "Gearjunkie\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, Evade +1,",
+    "Gearjunkie": {
+        "Name": "Gearjunkie",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Grease Monkey Specialties",
+        "Augments": 1,
+        "Evade": 1,
         "Hit Points": 6
     },
-    "Auto-Wright\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Auto-Wright\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Auto-Wright": {
+        "Name": "Auto-Wright",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Crafting Vehicles",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Autos\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Autos\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Autos": {
+        "Name": "Beta Autos",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Crafting Vehicles",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Prototype Autos\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Autos\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Autos": {
+        "Name": "Prototype Autos",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Crafting Vehicles",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Manual-Wright\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Manual-Wright\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Manual-Wright": {
+        "Name": "Manual-Wright",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Crafting Vehicles",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Clankers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Clankers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Clankers": {
+        "Name": "Beta Clankers",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Crafting Vehicles",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Prototype Clankers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Clankers\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Clankers": {
+        "Name": "Prototype Clankers",
         "Skill": "Engineer",
         "Attr": "Sciences",
         "Subtype": "Crafting Vehicles",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Vehicle Armorer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Vehicle Armorer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Vehicle Armorer": {
+        "Name": "Vehicle Armorer",
         "Skill": "Engineer",
         "Attr": "Sciences",
-        "Subtype": "Crafting Vehicles",
+        "Subtype": "Armoring Vehicles",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Beta Armoring\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Armoring\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Armoring": {
+        "Name": "Beta Armoring",
         "Skill": "Engineer",
         "Attr": "Sciences",
-        "Subtype": "Crafting Vehicles",
+        "Subtype": "Armoring Vehicles",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Prototype Armoring\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,": {
-        "Name": "Prototype Armoring\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +1, DIY +1,",
+    "Prototype Armoring": {
+        "Name": "Prototype Armoring",
         "Skill": "Engineer",
         "Attr": "Sciences",
-        "Subtype": "Crafting Vehicles",
+        "Subtype": "Armoring Vehicles",
+        "Augments": 1,
+        "DIY": 1,
         "Hit Points": 7
     },
-    "Beta Hacker\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,": {
-        "Name": "Beta Hacker\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,",
+    "Beta Hacker": {
+        "Name": "Beta Hacker",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "",
+        "Evade": 1,
+        "Augments": 1,
         "Hit Points": 8
     },
     "Dud": {
@@ -3483,6 +4032,7 @@
         "Attr": "Sciences",
         "Subtype": "",
         "Accuracy": 1,
+        "Evade": 1,
         "Hit Points": 7
     },
     "Item Breaker": {
@@ -3494,11 +4044,13 @@
         "Strike": 3,
         "Hit Points": 9
     },
-    "Reverse Engineer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Reverse Engineer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Reverse Engineer": {
+        "Name": "Reverse Engineer",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
     "Saboteur": {
@@ -3507,69 +4059,88 @@
         "Attr": "Sciences",
         "Subtype": "",
         "Accuracy": 1,
+        "Priority": 3,
         "Hit Points": 8
     },
-    "Improvised Improvements\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,": {
-        "Name": "Improvised Improvements\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Evade +1, Augments +1,",
+    "Improvised Improvements": {
+        "Name": "Improvised Improvements",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "",
+        "Evade": 1,
+        "Augments": 1,
         "Hit Points": 7
     },
-    "Pyrotechnician\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Pyrotechnician\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Pyrotechnician": {
+        "Name": "Pyrotechnician",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Explosives",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Explosives\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Explosives\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Explosives": {
+        "Name": "Beta Explosives",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Explosives",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Prototype Explosives\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Prototype Explosives\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Prototype Explosives": {
+        "Name": "Prototype Explosives",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Explosives",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 6
     },
-    "Major Explosion\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Major Explosion\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Major Explosion": {
+        "Name": "Major Explosion",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Explosives",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Optician\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Optician\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Optician": {
+        "Name": "Optician",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Eyewear",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Beta Eyewear\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Beta Eyewear\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Beta Eyewear": {
+        "Name": "Beta Eyewear",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Eyewear",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     },
-    "Prototype Eyewear\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Prototype Eyewear\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Prototype Eyewear": {
+        "Name": "Prototype Eyewear",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Eyewear",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 5
     },
-    "Trinket Crafter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,": {
-        "Name": "Trinket Crafter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Augments +2, DIY +1,",
+    "Trinket Crafter": {
+        "Name": "Trinket Crafter",
         "Skill": "Gadgetry",
         "Attr": "Sciences",
         "Subtype": "Crafting Trinkets",
+        "Augments": 2,
+        "DIY": 1,
         "Hit Points": 4
     }
 }

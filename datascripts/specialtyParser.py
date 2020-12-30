@@ -15,6 +15,13 @@ specialties = {}
 skill = ''
 attr = ''
 subtype = ''
+reqs = ''
+resist = ''
+cost = ''
+stance = False
+reflex = False
+
+subtype_list = ["Essence Manipulation", "Armoring Vehicles"]
 
 for line in lines :
     #some regex to match if line is skill, some regex to match if line is subtype
@@ -24,9 +31,10 @@ for line in lines :
         skill = line[0:start].strip()
         attr = line[start:end].strip("(")
         subtype = ''
-    if line.find("Specialties") != -1 or line.find("Crafting") != -1 :
+    if line.find("Specialties") != -1:
         subtype = line.strip()
-
+    if line.strip().startswith("Crafting") or line.strip() in subtype_list:
+        subtype = line.strip()
     # 
     #skill = whatevermatch
     #attr = whatevermatch
@@ -34,8 +42,8 @@ for line in lines :
 
 
     out = {}
-    bonus_matches = re.findall("(Accuracy|Strike|Hit Points)(\s+\+[0-9]+)", line)
-    name_end = re.search("(Accuracy\s*\+|Strike\s*\+|Hit Points\s*\+)", line)
+    bonus_matches = re.findall("(Accuracy|Evade|Strike|Defense|Priority|Speed|Augments|DIY|Wounds|Hit Points)(\s+\+[0-9]+)", line)
+    name_end = re.search("(Accuracy\s*\+|Evade\s*\+|Strike\s*\+|Defense\s*\+|Priority\s*\+|Speed\s*\+|Augments\s*\+|DIY\s*\+|Wounds\s*\+|Hit Points\s*\+)", line)
     if name_end :
         name_end = name_end.span(0)[0]
         name = line[0:name_end].strip()
