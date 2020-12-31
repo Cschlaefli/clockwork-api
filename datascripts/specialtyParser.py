@@ -35,6 +35,7 @@ for line in lines :
         subtype = line.strip()
     if line.strip().startswith("Crafting") or line.strip() in subtype_list:
         subtype = line.strip()
+
     # 
     #skill = whatevermatch
     #attr = whatevermatch
@@ -54,9 +55,62 @@ for line in lines :
         specialties[name] = out
 
     for m in bonus_matches :
-        out[m[0]] = int(m[1])
+        out[m[0].replace(" ", "")] = int(m[1])
 
-#print( specialties)
+#remove misparses
+specialties.pop('Cost: Earthquaking', None)
+specialties.pop('Cost: Reflexive Melee', None)
+trimmed_lines = [l.strip() for l in lines if l.strip() != '']
+line_numbers = []
+
+for key in specialties.keys() :
+    sp = specialties[key]
+    line_number = trimmed_lines.index(key)
+    #sp["line"] = line_number
+    line_numbers.append(line_number)
+line_numbers.sort()
+
+line_numbers.append(line_numbers[-1] + 21)
+
+for i in range(0,len(line_numbers)-1) :
+    reqs = ''
+    resist = ''
+    cost = ''
+    stance = False
+    reflex = False
+
+    start = line_numbers[i]
+    end = line_numbers[i+1]
+    sp_lines = trimmed_lines[start:end]
+    #print(start,end)
+    sp = specialties[sp_lines[0]]
+    #sp["description"] = ''
+    desc = ''
+    for sp_l in sp_lines :
+        line = sp_l.strip()
+        req_match = re.compile("Requires:.*")
+        resist_match = re.compile("Resist:.*")
+        cost_match = re.compile("Cost:.*")
+        reflex_match = re.compile(".*reflexively.*")
+        stance_match = re.compile("Stance\s\(costs\s1\sAP\sto\senter\)")
+
+        if line.strip() == sp["Name"] or re.match("\w+\sSpecialty.*", line.strip()):
+            pass
+        elif req_match.match(line) :
+            sp["requirements"] = line
+        elif resist_match.match(line) :
+            sp["resist"] = line
+        elif cost_match.match(line) :
+            sp["cost"] = line
+            if reflex_match.match(line) :
+                sp["reflexive"] = True
+        elif stance_match.match(line) :
+            sp["stance"] = True
+        else :
+            desc += line + ' '
+    sp["Description"] = desc
+
+        
 
 with open('datascripts\output.json', 'w') as f :
     f.write(json.dumps(specialties, indent=4))

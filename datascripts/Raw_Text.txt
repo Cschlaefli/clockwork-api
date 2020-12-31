@@ -16719,9 +16719,7 @@ grant you +1 to your soak class against called shots to your eyes and a
 
 
 
-      Grapple
- 
-Gun                                
+      Grapple-Gun                                
     6 princes
      
 
@@ -22195,7 +22193,7 @@ the potency of that augment only count as one effect.
 
 
 
-      Combat Insight
+      Combat Insights
      
 
 
@@ -33429,7 +33427,7 @@ somehow obtain a tier result of 5 with their Sciences attribute).
 
 
 
-      Prototype Medicine
+      Prototype Medicines
      
 
 
@@ -60198,7 +60196,7 @@ character instantly come to life and have a great background.
 
 
 
-      Epic Brainworks        Augments +2, DIY +1, Hit Points +6
+      Superior Brainworks        Augments +2, DIY +1, Hit Points +6
      
 
 
@@ -60362,7 +60360,7 @@ character instantly come to life and have a great background.
 
 
 
-      Concentrated Steam        Accuracy +1, Augments +2, Hit Points +6
+      Concentrated Stream        Accuracy +1, Augments +2, Hit Points +6
      
 
 

@@ -98,6 +98,14 @@ namespace tephraAPI.Controllers
 
             return NoContent();
         }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAllSpecialties()
+        {
+            _context.Specialties.RemoveRange(_context.Specialties);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
 
         private bool SpecialtyExists(int id)
         {
