@@ -8,8 +8,8 @@ using tephraAPI.Models;
 namespace tephraAPI.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
-    [Migration("20201231024140_specialtyDescResize")]
-    partial class specialtyDescResize
+    [Migration("20201231154824_specialties")]
+    partial class specialties
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,8 +35,8 @@ namespace tephraAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Cost")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
 
                     b.Property<int>("DIY")
                         .HasColumnType("int");
@@ -45,7 +45,7 @@ namespace tephraAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(5000)
+                        .HasMaxLength(10000)
                         .HasColumnType("longtext");
 
                     b.Property<int>("Evade")
@@ -55,11 +55,11 @@ namespace tephraAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
+                        .HasMaxLength(35)
+                        .HasColumnType("varchar(35)");
 
                     b.Property<string>("Notes")
-                        .HasMaxLength(5000)
+                        .HasMaxLength(10000)
                         .HasColumnType("longtext");
 
                     b.Property<int>("Priority")
@@ -69,12 +69,12 @@ namespace tephraAPI.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Requirments")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
 
                     b.Property<string>("Resist")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
 
                     b.Property<string>("Skill")
                         .HasMaxLength(20)
@@ -90,8 +90,8 @@ namespace tephraAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Subtype")
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.Property<int>("Wounds")
                         .HasColumnType("int");

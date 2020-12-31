@@ -43,7 +43,7 @@ namespace tephraAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(5000)
+                        .HasMaxLength(10000)
                         .HasColumnType("longtext");
 
                     b.Property<int>("Evade")
@@ -53,11 +53,11 @@ namespace tephraAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(25)
-                        .HasColumnType("varchar(25)");
+                        .HasMaxLength(35)
+                        .HasColumnType("varchar(35)");
 
                     b.Property<string>("Notes")
-                        .HasMaxLength(5000)
+                        .HasMaxLength(10000)
                         .HasColumnType("longtext");
 
                     b.Property<int>("Priority")

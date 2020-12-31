@@ -93,6 +93,7 @@ for i in range(0,len(line_numbers)-1) :
         cost_match = re.compile("Cost:.*")
         reflex_match = re.compile(".*reflexively.*")
         stance_match = re.compile("Stance\s\(costs\s1\sAP\sto\senter\)")
+        augment_match = re.compile("(.*p\s.*Augments\s+M.*|.*Chapter\s[0-9]+.*)")
 
         if line.strip() == sp["Name"] or re.match("\w+\sSpecialty.*", line.strip()):
             pass
@@ -106,6 +107,8 @@ for i in range(0,len(line_numbers)-1) :
                 sp["reflexive"] = True
         elif stance_match.match(line) :
             sp["stance"] = True
+        elif augment_match.match(line)  :
+            break
         else :
             desc += line + ' '
     sp["Description"] = desc

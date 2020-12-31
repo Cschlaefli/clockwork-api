@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace tephraAPI.Models{
     public class Specialty {
         public int Id {get;set;}
-        [MaxLength(25)]
+        [MaxLength(35)]
         public string Name {get;set;}
         [MaxLength(20)]
         public string Skill {get;set;}
@@ -18,11 +18,11 @@ namespace tephraAPI.Models{
         public string Resist {get;set;}
         [MaxLength(200)]
         public string Cost {get;set;}
-        [MaxLength(5000)]
+        [MaxLength(10000)]
         public string Description {get;set;}
         public bool Stance {get;set;}
         public bool Reflexive {get;set;}
-        [MaxLength(5000)]
+        [MaxLength(10000)]
         public string Notes {get;set;}
         public int Accuracy {get;set;}
         public int Strike {get;set;}
