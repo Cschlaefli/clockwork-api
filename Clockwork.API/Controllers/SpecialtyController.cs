@@ -38,7 +38,8 @@ namespace tephraAPI.Controllers
         [EnableCors("Permissive")]
         public async Task<ActionResult<IEnumerable<Specialty>>> GetSpecialties(int page, int page_size)
         {
-            return await _context.Specialties.Skip(page*page_size).Take(page).ToListAsync();
+            var p = page-1;
+            return await _context.Specialties.Skip(p*page_size).Take(page_size).ToListAsync();
         }
 
         // GET: api/Specialty/5

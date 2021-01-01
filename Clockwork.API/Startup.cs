@@ -62,7 +62,6 @@ namespace tephraAPI
                     .EnableSensitiveDataLogging()
                     .EnableDetailedErrors()
             );
-            services.AddOData();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -88,8 +87,6 @@ namespace tephraAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.EnableDependencyInjection();
-                endpoints.Expand().Select().OrderBy().Filter();
             });
         }
     }

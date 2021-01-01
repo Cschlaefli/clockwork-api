@@ -11,6 +11,8 @@ namespace tephraAPI.Models
         }
 
         public DbSet<Specialty> Specialties { get; set; }
+        public DbSet<Augment> Augments {get;set;}
+
 
     }
 }
