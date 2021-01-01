@@ -1,0 +1,63 @@
+@page "/specialties"
+@using System.Net.Http
+@inject HttpClient Http
+@using Clockwork.Models
+@using BlazorPagination
+
+@if (_data == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <BlazorPager CurrentPage="@_data.CurrentPage"
+            PageCount="@_data.PageCount"
+            OnPageChanged="(async e => { _page = e; await GetData();})"
+
+            ShowFirstLast="false"
+            ShowPageNumbers="true"
+            VisiblePages="10"
+            FirstText="First"
+            LastText="Last" />
+    <table class="table">
+        <tbody>
+        @foreach (var item in _data.Results)
+        {
+        <tr>
+            <SpecialtyDetail specialty=@item/>
+        </tr>
+        }
+        </tbody>
+    </table>
+
+}
+
+
+@code {
+
+    private PagedResult<Specialty> _data;
+    protected override async Task OnInitializedAsync() => 
+        await GetData();
+
+    private string slug = "api/Specialty";
+    private int _page = 0;
+    private int _page_size = 30;
+    private int _page_count = 0;
+    private int _records = 0;
+    private async Task GetData()
+    {
+        _records = await Http.GetFromJsonAsync<int>($"{slug}/count");
+        _page_count = (_records + _page_size - 1)/_page_size;
+
+        _data = new PagedResult<Specialty>() { 
+            CurrentPage = _page,
+            PageSize = _page_size,
+            PageCount = _page_count
+            };
+        _data.Results = await Http.GetFromJsonAsync<Specialty[]>($"{slug}/{_page_size}/{_page}");
+        _data.RowCount = _data.Results.Count();
+
+        StateHasChanged();
+    }
+
+}
