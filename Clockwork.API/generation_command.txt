@@ -1,1 +1,6 @@
-dotnet aspnet-codegenerator controller -l CodeTemplates/PagedTemplate.cshtml  -name {Model}Controller  -m {Model} -dc BaseContext -outDir Controllers
+dotnet aspnet-codegenerator controller -l CodeTemplates/PagedTemplate.cshtml  -name {Model}Controller  -m {Model} -dc BaseDbContext -outDir Controllers
+
+dotnet aspnet-codegenerator controller -async -api  -name AugmentController  -m Augment -dc BaseDbContext -outDir Controllers
+
+for getting this to work
+https://docs.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-item-template
