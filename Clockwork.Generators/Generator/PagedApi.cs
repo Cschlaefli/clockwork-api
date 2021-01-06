@@ -22,23 +22,40 @@ namespace Clockwork.Models
 
         IEnumerable<SyntaxNode>? allNodes = compilation.SyntaxTrees.SelectMany(s => s.GetRoot().DescendantNodes());
         IEnumerable<AttributeSyntax> allAttributes = allNodes.Where((d) => d.IsKind(SyntaxKind.Attribute)).OfType<AttributeSyntax>();
+        IEnumerable<ClassDeclarationSyntax> allClasses = allNodes.Where((d) => d.IsKind(SyntaxKind.ClassDeclaration)).OfType<ClassDeclarationSyntax>();
         ImmutableArray<AttributeSyntax> filterAttributes = allAttributes.Where(d => d.Name.ToString() == "Filter")
             .ToImmutableArray();
-        ImmutableArray<SyntaxTree> apiAttributes = allAttributes.Where(d => d.Name.ToString() == "Api").Select(d => d.SyntaxTree)
+        ImmutableArray<AttributeSyntax> attributes = allAttributes.Where(d => d.Name.ToString() == "Api")
             .ToImmutableArray();
 
-        foreach(SyntaxTree tree in apiAttributes){
+        var apiClasses = allClasses.Where(e => e.AttributeLists.Any(e => e.Attributes.Any(d=> (d.Name as SimpleNameSyntax)?.Identifier.Text.Equals("Api") ?? false )));
 
 
-                var nodes = tree.GetRoot().DescendantNodes();
-                var sm = compilation.GetSemanticModel(tree);
-                var f = nodes.OfType<PropertyDeclarationSyntax>().FirstOrDefault();
+
+        var index = 0;
+        foreach(var t in apiClasses){
+            index += 1;
+
+
+                //var nodes = tree.GetRoot().DescendantNodes();
+                //var sm = compilation.GetSemanticModel(tree);
+                //var f = nodes.OfType<PropertyDeclarationSyntax>().FirstOrDefault();
                 //var n = nodes.OfType<TypeDeclarationSyntax>().FirstOrDefault();
-                var name = "";
-                if (f != null){
+                var name = t.Identifier.ValueText;
+                //var v = t.AttributeLists.SelectMany(e => e.Attributes).Where( d=> (d.Name as SimpleNameSyntax)?.Identifier.Text.Equals("Api") ?? false ).FirstOrDefault();
+                //var names = name+"s";
+                var sm = compilation.GetSemanticModel(t.SyntaxTree);
+                var cl = sm.GetDeclaredSymbol(t) as ITypeSymbol;
+                var names = cl?.GetAttributes().SelectMany(e=> e.NamedArguments).FirstOrDefault(na => na.Key == "Plural").Value.Value?.ToString();
+                var s = t.SyntaxTree.GetRoot().DescendantNodes().OfType<PropertyDeclarationSyntax>().FirstOrDefault( e => e.Identifier.ValueText.Equals("DbSetName"));
+                names ??=  name + "s";
+                
+                //var sm.GetDeclaredSymbol()
+                /*if (f != null){
                     name = sm.GetDeclaredSymbol(f)?.ContainingType?.Name?.ToString();
-                }
-                var names = name+"s";
+                }*/
+                var rb = "}";
+                var lb = "{";
 
                 StringBuilder sourceBuilder = new StringBuilder($@"
 using System;
@@ -126,7 +143,7 @@ namespace tephraApi.Controllers");
                 sourceBuilder.AppendLine("\t\t}");
 
                 sourceBuilder.AppendLine(@"
-        [HttpPut(""{page}"")]
+        [HttpPut(""{id}"")]
         [EnableCors(""Permissive"")]
         ");
                 sourceBuilder.AppendLine($@"
@@ -150,8 +167,8 @@ namespace tephraApi.Controllers");
                 ");
                 sourceBuilder.AppendLine("\t\t\t{");
                 sourceBuilder.AppendLine($@"
-                //if (!SpecialtyExists(id)) return NotFound();
-                //else throw;
+                if (!{name}Exists(id)) return NotFound();
+                else throw;
                 ");
                 sourceBuilder.AppendLine("\t\t\t}");
 
@@ -160,58 +177,68 @@ namespace tephraApi.Controllers");
             ");
         sourceBuilder.AppendLine("\t\t}");
 
-                sourceBuilder.AppendLine("\t}");
-                sourceBuilder.AppendLine("}");
 
-        /*
-
-        // POST: api/Specialty
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+                sourceBuilder.AppendLine($@"
         [HttpPost]
-        [EnableCors("Permissive")]
-        public async Task<ActionResult<Specialty>> PostSpecialty(Specialty specialty)
-        {
-            _context.Specialties.Add(specialty);
+        [EnableCors(""Permissive"")]
+        public async Task<ActionResult<{name}>> Post{name}({name} obj)
+            ");
+        sourceBuilder.AppendLine("\t\t{");
+                sourceBuilder.AppendLine($@"
+            _context.{names}.Add(obj);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSpecialty", new { id = specialty.Id }, specialty);
-        }
+            return CreatedAtAction(""Get{name}"", new {lb} id = obj.Id {rb}, obj);
+            ");
+        sourceBuilder.AppendLine("\t\t}");
 
-        // DELETE: api/Specialty/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSpecialty(int id)
-        {
-            var specialty = await _context.Specialties.FindAsync(id);
-            if (specialty == null)
-            {
-                return NotFound();
-            }
 
-            _context.Specialties.Remove(specialty);
+                sourceBuilder.AppendLine(@"
+        [HttpDelete(""{id}"")]
+            ");
+                sourceBuilder.AppendLine($@"
+        public async Task<IActionResult> Delete{name}(int id)
+            ");
+        sourceBuilder.AppendLine("\t\t{");
+                sourceBuilder.AppendLine($@"
+            var obj = await _context.{names}.FindAsync(id);
+            if (obj == null) return NotFound();
+
+
+            _context.{names}.Remove(obj);
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
+            ");
+        sourceBuilder.AppendLine("\t\t}");
+
+                sourceBuilder.AppendLine($@"
         [HttpDelete]
-        public async Task<IActionResult> DeleteAllSpecialties()
-        {
-            _context.Specialties.RemoveRange(_context.Specialties);
+        public async Task<IActionResult> DeleteAll{names}()
+            ");
+        sourceBuilder.AppendLine("\t\t{");
+                sourceBuilder.AppendLine($@"
+            _context.{names}.RemoveRange(_context.{names});
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
+            ");
+        sourceBuilder.AppendLine("\t\t}");
 
-        private bool SpecialtyExists(int id)
-        {
-            return _context.Specialties.Any(e => e.Id == id);
-        }
-    }
-}
-*/
-                //sourceBuilder.AppendLine($@"Console.WriteLine(@"" - Class : {name?.ToString()}"");");
+                sourceBuilder.AppendLine($@"
+        private bool {name}Exists(int id)
+            ");
+        sourceBuilder.AppendLine("\t\t{");
+                sourceBuilder.AppendLine($@"
+            return _context.{names}.Any(e => e.Id == id);
+            ");
+        sourceBuilder.AppendLine("\t\t}");
+    sourceBuilder.AppendLine("\t}");
+sourceBuilder.AppendLine("}");
+
                 var source = sourceBuilder.ToString();
 
-                context.AddSource("TestController"+name, SourceText.From(source, Encoding.UTF8));
+                context.AddSource($"{name}", SourceText.From(source, Encoding.UTF8));
             }
         }
         public void Initialize(GeneratorInitializationContext context)
@@ -244,8 +271,11 @@ namespace Test
         {
             Console.WriteLine(""The following semanticmodels contained the api attribute :"");
 ");
+            var index = 0;
             foreach (SyntaxTree tree in apiAttributes)
             {
+                index += 1;
+                sourceBuilder.AppendLine($"//{index}");
                 var nodes = tree.GetRoot().DescendantNodes();
                 var sm = compilation.GetSemanticModel(tree);
                 var fields = nodes.OfType<PropertyDeclarationSyntax>();
@@ -318,5 +348,19 @@ namespace HelloWorldGenerated
             // No initialization required
         }
     }
+    internal static class Helpers {
 
+        internal static SimpleNameSyntax? GetSimpleNameFromNode(AttributeSyntax node)
+        {
+            var identifierNameSyntax = node.Name as IdentifierNameSyntax;
+            var qualifiedNameSyntax = node.Name as QualifiedNameSyntax;
+            
+            return
+                identifierNameSyntax
+                ??
+                qualifiedNameSyntax?.Right
+                ??
+                (node.Name as AliasQualifiedNameSyntax)?.Name;
+        }
+    }
 }
