@@ -1,8 +1,13 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Reflection;
+using System.Runtime.Serialization;
 
 namespace Clockwork.Models{
-    public class Specialty {
+
+    [Filter]
+    public class Specialty{
         public int Id {get;set;}
         [MaxLength(35)]
         public string Name {get;set;}

@@ -13,6 +13,101 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Clockwork.Models
 {
+    [Generator]
+    public class FilterGenerator : ISourceGenerator
+    {
+        public void Execute(GeneratorExecutionContext context){
+            Compilation compilation = context.Compilation;
+
+            IEnumerable<SyntaxNode>? allNodes = compilation.SyntaxTrees.SelectMany(s => s.GetRoot().DescendantNodes());
+            IEnumerable<ClassDeclarationSyntax> allClasses = allNodes.Where((d) => d.IsKind(SyntaxKind.ClassDeclaration))
+                                                                        .OfType<ClassDeclarationSyntax>();
+
+            var filterClasses = allClasses.Where(e => e.AttributeLists.Any(e => e.Attributes.Any(d=> (d.Name as SimpleNameSyntax)?.Identifier.Text.Equals("Filter") ?? false )));
+
+            var Icomp = compilation.GetTypeByMetadataName("System.IComparable");
+            var st = compilation.GetTypeByMetadataName("System.String");
+            var i = compilation.GetTypeByMetadataName("System.Integer");
+            foreach (var cds in filterClasses)
+            {
+                var sm = compilation.GetSemanticModel(cds.SyntaxTree);
+                var cl = sm.GetDeclaredSymbol(cds);
+                
+                //if ( ! cl?.AllInterfaces.Any(c => c.Name.ToString() == "IFilterable") ?? false) continue;
+
+                var name = $"{cl.Name}Filter";
+                var rb = "}";
+                var lb = "{";
+                var props =  cl.GetMembers().OfType<IPropertySymbol>()
+                    .Where(m => !m.GetAttributes().Any(a => a.AttributeClass?.Name == "NoFilter"));
+                StringBuilder sourceBuilder = new StringBuilder($@"
+using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace {cl.ContainingNamespace.ToDisplayString()}
+{lb}
+    public class {name}
+    {lb}");
+sourceBuilder.AppendLine("\n#nullable enable");
+        foreach (var item in props)
+        {
+            sourceBuilder.AppendLine($@"
+            public FilterProperty<{item.Type}>? {item.Name} {lb} get; set; {rb}
+
+            ");
+        }
+sourceBuilder.AppendLine("\n#nullable enable");
+                sourceBuilder.AppendLine($@"
+                public IQueryable<{cl.Name}> Filter(IQueryable<{cl.Name}> q)
+                {lb}");
+                foreach (var item in props)
+                {
+                    sourceBuilder.AppendLine($@"
+                    if ({item.Name}?.HasValue() ?? false)
+                    {lb}
+                        switch({item.Name}.Filter)
+                        {lb}");
+                            if (item.Type.Equals(st)) 
+                            {
+                            sourceBuilder.AppendLine($@"
+                            case FilterOperations.Contains :
+                                q = q.Where(e => e.{item.Name}.Contains({item.Name}.Value));
+                                break;");
+                            }else if (item.Type.SpecialType == SpecialType.System_Int32){
+                            sourceBuilder.AppendLine($@"
+                            case FilterOperations.LessThan :
+                                q = q.Where(e => e.{item.Name} < {item.Name}.Value);
+                                break;
+                            case FilterOperations.GreaterThan :
+                                q = q.Where(e => e.{item.Name} > {item.Name}.Value);
+                                break;");
+                            }
+                            sourceBuilder.AppendLine($@"
+                            case FilterOperations.Equals :
+                                q = q.Where(e => e.{item.Name}.Equals({item.Name}.Value));
+                                break;
+                        {rb}
+                    {rb}");
+                }
+                sourceBuilder.AppendLine($@"
+                return q;
+                {rb}
+                 ");
+                sourceBuilder.AppendLine($@"
+    {rb}
+{rb}
+                 ");
+
+                var source = sourceBuilder.ToString();
+
+                context.AddSource($"{name}", SourceText.From(source, Encoding.UTF8));
+
+
+            }
+        
+        }
+        public void Initialize(GeneratorInitializationContext context){}
+    }
     
     [Generator]
     public class ApiGenerator : ISourceGenerator
@@ -29,6 +124,7 @@ namespace Clockwork.Models
             .ToImmutableArray();
 
         var apiClasses = allClasses.Where(e => e.AttributeLists.Any(e => e.Attributes.Any(d=> (d.Name as SimpleNameSyntax)?.Identifier.Text.Equals("Api") ?? false )));
+        var filterClasses = allClasses.Where(e => e.AttributeLists.Any(e => e.Attributes.Any(d=> (d.Name as SimpleNameSyntax)?.Identifier.Text.Equals("Filter") ?? false )));
 
 
 
@@ -69,138 +165,92 @@ using Clockwork.Models;
 using tephraAPI.Models;
 using Microsoft.AspNetCore.Cors;
 
-namespace tephraApi.Controllers");
-                sourceBuilder.AppendLine(@"{");
-                sourceBuilder.AppendLine($@"
+namespace tephraApi.Controllers
+{lb}
     [Route(""api/[controller]"")]
     [ApiController]
-    public class {name}Controller : ControllerBase");
-                sourceBuilder.AppendLine("\t{");
-                sourceBuilder.AppendLine($@"
+    public class {name}Controller : ControllerBase
+    {lb}
         private readonly BaseDbContext _context;
 
         public {name}Controller(BaseDbContext context)
-                ");
-                sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine(@"
+        {lb}
             _context = context;
-                ");
-                sourceBuilder.AppendLine("\t\t}");
-                sourceBuilder.AppendLine(@"
+        {rb}
+
         [HttpGet(""count"")]
         [EnableCors(""Permissive"")]
         public async Task<ActionResult<int>> GetCount()
-                ");
-                sourceBuilder.AppendLine("\t\t{");
-        {
-                sourceBuilder.AppendLine($@"
+        {lb}
             return await _context.{names}.CountAsync();
-                ");
-                sourceBuilder.AppendLine("\t\t}");
-        }
-
-
-
-                sourceBuilder.AppendLine($@"
+        {rb}
+        [HttpPost(""count"")]
+        [EnableCors(""Permissive"")]
+        public async Task<ActionResult<int>> GetCount({name}Filter filter)
+        {lb}
+            return await filter.Filter(_context.{names}).CountAsync();
+        {rb}
         [HttpGet]
         [EnableCors(""Permissive"")]
         public async Task<ActionResult<IEnumerable<{name}>>> Get{names}()
-                ");
-                sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             return await _context.{names}.ToListAsync();
-                ");
-                sourceBuilder.AppendLine("\t\t}");
-                sourceBuilder.AppendLine(@"
-        [HttpGet(""{page}/{page_size}"")]
+        {rb}
+        [HttpGet(""{lb}page{rb}/{lb}page_size{rb}"")]
         [EnableCors(""Permissive"")]
-        ");
-                sourceBuilder.AppendLine($@"
         public async Task<ActionResult<IEnumerable<{name}>>> Get{names}(int page, int page_size)
-                ");
-                sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             var p = page-1;
             return await _context.{names}.Skip(p*page_size).Take(page_size).ToListAsync();
-            ");
-                sourceBuilder.AppendLine("\t\t}");
+        {rb}
 
-                sourceBuilder.AppendLine(@"
-        [HttpGet(""{id}"")]
+        [HttpGet(""{lb}id{rb}"")]
         [EnableCors(""Permissive"")]
-        ");
-                sourceBuilder.AppendLine($@"
         public async Task<ActionResult<{name}>> Get{name}(int id)
-        ");
-                sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             var obj = await _context.{names}.FindAsync(id);
 
             if (obj == null) return NotFound();
 
             return obj;
-            ");
-                sourceBuilder.AppendLine("\t\t}");
+        {rb}
 
-                sourceBuilder.AppendLine(@"
-        [HttpPut(""{id}"")]
+        [HttpPut(""{lb}id{rb}"")]
         [EnableCors(""Permissive"")]
-        ");
-                sourceBuilder.AppendLine($@"
         public async Task<IActionResult> Put{name}(int id, {name} obj)
-        ");
-                sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             if (id != obj.Id) return BadRequest();
 
             _context.Entry(obj).State = EntityState.Modified;
 
             try
-                ");
-                sourceBuilder.AppendLine("\t\t\t{");
-                sourceBuilder.AppendLine($@"
+            {lb}
                 await _context.SaveChangesAsync();
-                ");
-                sourceBuilder.AppendLine("\t\t\t}");
-                sourceBuilder.AppendLine($@"
+            {rb}
             catch (DbUpdateConcurrencyException)
-                ");
-                sourceBuilder.AppendLine("\t\t\t{");
-                sourceBuilder.AppendLine($@"
+            {lb}
                 if (!{name}Exists(id)) return NotFound();
                 else throw;
-                ");
-                sourceBuilder.AppendLine("\t\t\t}");
+            {rb}
 
-            sourceBuilder.AppendLine($@"
             return NoContent();
-            ");
-        sourceBuilder.AppendLine("\t\t}");
+
+        {rb}
 
 
-                sourceBuilder.AppendLine($@"
         [HttpPost]
         [EnableCors(""Permissive"")]
         public async Task<ActionResult<{name}>> Post{name}({name} obj)
-            ");
-        sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             _context.{names}.Add(obj);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(""Get{name}"", new {lb} id = obj.Id {rb}, obj);
-            ");
-        sourceBuilder.AppendLine("\t\t}");
+        {rb}
 
-
-                sourceBuilder.AppendLine(@"
-        [HttpDelete(""{id}"")]
-            ");
-                sourceBuilder.AppendLine($@"
+        [HttpDelete(""{lb}id{rb}"")]
         public async Task<IActionResult> Delete{name}(int id)
-            ");
-        sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             var obj = await _context.{names}.FindAsync(id);
             if (obj == null) return NotFound();
 
@@ -209,33 +259,23 @@ namespace tephraApi.Controllers");
             await _context.SaveChangesAsync();
 
             return NoContent();
-            ");
-        sourceBuilder.AppendLine("\t\t}");
 
-                sourceBuilder.AppendLine($@"
+        {rb}
         [HttpDelete]
         public async Task<IActionResult> DeleteAll{names}()
-            ");
-        sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             _context.{names}.RemoveRange(_context.{names});
             await _context.SaveChangesAsync();
 
             return NoContent();
-            ");
-        sourceBuilder.AppendLine("\t\t}");
+        {rb}
 
-                sourceBuilder.AppendLine($@"
         private bool {name}Exists(int id)
-            ");
-        sourceBuilder.AppendLine("\t\t{");
-                sourceBuilder.AppendLine($@"
+        {lb}
             return _context.{names}.Any(e => e.Id == id);
-            ");
-        sourceBuilder.AppendLine("\t\t}");
-    sourceBuilder.AppendLine("\t}");
-sourceBuilder.AppendLine("}");
-
+        {rb}
+    {rb}
+{rb}");
                 var source = sourceBuilder.ToString();
 
                 context.AddSource($"{name}", SourceText.From(source, Encoding.UTF8));
@@ -245,7 +285,7 @@ sourceBuilder.AppendLine("}");
         {
         }            
     }
-    [Generator]
+
     public class TestGenerator : ISourceGenerator
     {
 
@@ -306,7 +346,7 @@ namespace Test
         {
         }
     }
-    [Generator]
+
     public class HelloWorldGenerator : ISourceGenerator
     {
         public void Execute(GeneratorExecutionContext context)

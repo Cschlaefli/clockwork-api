@@ -14,9 +14,12 @@ using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using tephraAPI.Models;
+using Clockwork.Models;
 using System.Net.Http;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Extensions;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using tephraAPI.Swagger.Extenstions;
 
 namespace tephraAPI
 {
@@ -67,6 +70,8 @@ namespace tephraAPI
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "tephraAPI", Version = "v1" });
+                //c.DocumentFilter<CustomModelDocumentFilter<AugmentFilter>>();
+                //c.DocumentFilter<CustomModelDocumentFilter<SpecialtyFilter>>();
             });
         }
 
