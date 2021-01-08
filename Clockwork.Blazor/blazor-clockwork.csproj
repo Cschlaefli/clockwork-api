@@ -17,6 +17,8 @@
     <ProjectReference Include="..\Clockwork.Models\Clockwork.Models.csproj" />
   </ItemGroup>
 
-
+  <ItemGroup>
+      <Watch Include="..\Pages\*" />
+  </ItemGroup>
 
 </Project>

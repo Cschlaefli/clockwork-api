@@ -39,7 +39,8 @@ namespace Clockwork.Models
                 var rb = "}";
                 var lb = "{";
                 var props =  cl.GetMembers().OfType<IPropertySymbol>()
-                    .Where(m => !m.GetAttributes().Any(a => a.AttributeClass?.Name == "NoFilter"));
+                    .Where(m => !m.GetAttributes().Any(a => a.AttributeClass?.Name == "NoFilterAttribute"));
+                //var attr =  cl.GetMembers().OfType<IPropertySymbol>().SelectMany(e=> e.GetAttributes()).Select(e=> e.AttributeClass.Name);
                 StringBuilder sourceBuilder = new StringBuilder($@"
 using System;
 using System.Collections.Generic;
@@ -48,15 +49,14 @@ namespace {cl.ContainingNamespace.ToDisplayString()}
 {lb}
     public class {name}
     {lb}");
-sourceBuilder.AppendLine("\n#nullable enable");
+//sourceBuilder.AppendLine("\n#nullable enable");
         foreach (var item in props)
         {
             sourceBuilder.AppendLine($@"
-            public FilterProperty<{item.Type}>? {item.Name} {lb} get; set; {rb}
-
+            public FilterProperty<{item.Type}> {item.Name} {lb} get; set; {rb} = new FilterProperty<{item.Type}>(""{item.Name}"");
             ");
         }
-sourceBuilder.AppendLine("\n#nullable enable");
+//sourceBuilder.AppendLine("\n#nullable enable");
                 sourceBuilder.AppendLine($@"
                 public IQueryable<{cl.Name}> Filter(IQueryable<{cl.Name}> q)
                 {lb}");
@@ -202,6 +202,13 @@ namespace tephraApi.Controllers
         {lb}
             var p = page-1;
             return await _context.{names}.Skip(p*page_size).Take(page_size).ToListAsync();
+        {rb}
+        [HttpPost(""{lb}page{rb}/{lb}page_size{rb}"")]
+        [EnableCors(""Permissive"")]
+        public async Task<ActionResult<IEnumerable<{name}>>> Get{names}(int page, int page_size, {name}Filter filter)
+        {lb}
+            var p = page-1;
+            return await filter.Filter(_context.{names}).Skip(p*page_size).Take(page_size).ToListAsync();
         {rb}
 
         [HttpGet(""{lb}id{rb}"")]

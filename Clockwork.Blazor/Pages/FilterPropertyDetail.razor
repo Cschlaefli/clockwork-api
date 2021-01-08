@@ -1,0 +1,59 @@
+@using Clockwork.Models
+
+
+<EditForm Model="filterProperty" class="form-inline well">
+<div class="input-group">
+<button class="btn @(Tracking ? "bg-success" :"btn-outline-secondary") " type="toggle" @onclick="e=> Hidden = !Hidden" >@filterProperty.Name</button>
+@switch (Type.GetTypeCode(typeof(T)))
+{
+    case System.TypeCode.Boolean :
+        <input hidden="@Hidden" class="form-control" type="checkbox" @bind="filterProperty.Value" @bind:event="oninput" @onchange="onChange" />
+        break;
+    case System.TypeCode.String :
+        <input hidden="@Hidden" class="form-control" type="text" @bind="filterProperty.Value" @bind:event="oninput" @onchange="onChange" />
+        break;
+    case System.TypeCode.Int32 :
+        <input hidden="@Hidden" class="form-control" type="number" @bind="filterProperty.Value" @bind:event="oninput" @onchange="onChange" />
+        break;
+    default:
+        break;
+} 
+  <div class="input-group-append">
+    <InputSelect class="form-control" hidden="@Hidden" @bind-Value="filterProperty.Filter">
+        <option value="@FilterOperations.Nothing"></option>
+        <option value="@FilterOperations.Equals">=</option>
+        <option value="@FilterOperations.GreaterThan">&lt;</option>
+        <option value="@FilterOperations.LessThan">&lt;</option>
+        <option value="@FilterOperations.Contains">.=</option>
+    </InputSelect>
+    </div>
+</div>
+</EditForm>
+
+@typeparam T
+@code {
+    private bool Hidden {get;set;} = true;
+    private bool Tracking {get => filterProperty.Filter != FilterOperations.Nothing;}
+
+    [Parameter]
+    public FilterProperty<T> filterProperty {get; set;}
+    [Parameter]
+    public EventCallback<FilterProperty<T>> onFilterChanged { get; set; }
+    private async Task onChange(ChangeEventArgs e)
+    {
+        switch (Type.GetTypeCode(typeof(T)))
+        {
+            case System.TypeCode.Boolean :
+                Hidden = true;
+                break;
+            case System.TypeCode.String :
+                Hidden = e.Value == "";
+                break;
+            default :
+                Hidden = false;
+                break;
+        }
+
+        await onFilterChanged.InvokeAsync(filterProperty);
+    }
+}

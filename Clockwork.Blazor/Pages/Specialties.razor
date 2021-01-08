@@ -10,6 +10,10 @@
 }
 else
 {
+    <div style="display:flex;flex-wrap:wrap;">
+        <FilterTest @bind-Filter='filter'/>
+    </div>
+    <button class="btn btn-primary" @onclick="FilterPage">Filter</button>
     <div class="d-flex justify-content-between">
     <BlazorPager CurrentPage="@_data.CurrentPage"
             PageCount="@_data.PageCount"
@@ -47,10 +51,16 @@ else
 @code {
 
     public int visPages = 10;
+    public SpecialtyFilter filter = new SpecialtyFilter();
 
     private PagedResult<Specialty> _data;
     protected override async Task OnInitializedAsync(){
 
+        await GetData();
+    }
+    protected async Task FilterPage()
+    {
+        _page = 1;
         await GetData();
     } 
 
@@ -61,7 +71,8 @@ else
     private int _records = 0;
     private async Task GetData()
     {
-        _records = await Http.GetFromJsonAsync<int>($"{slug}/count");
+        HttpResponseMessage response = await Http.PostAsJsonAsync<SpecialtyFilter>($"{slug}/count", filter);
+        _records = await response.Content.ReadFromJsonAsync<int>();
         _page_count = (_records + _page_size -1)/_page_size;
 
         _data = new PagedResult<Specialty>() { 
@@ -69,7 +80,8 @@ else
             PageSize = _page_size,
             PageCount = _page_count
             };
-        _data.Results = await Http.GetFromJsonAsync<Specialty[]>($"{slug}/{_page}/{_page_size}");
+        response = await Http.PostAsJsonAsync<SpecialtyFilter>($"{slug}/{_page}/{_page_size}", filter);
+        _data.Results = await response.Content.ReadFromJsonAsync<Specialty[]>();
         _data.RowCount = _data.Results.Count();
 
         StateHasChanged();

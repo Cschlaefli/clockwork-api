@@ -1,0 +1,54 @@
+@using System.Net.Http
+@inject HttpClient Http
+@using Clockwork.Models
+@using System.Reflection
+
+
+@foreach (var f in Filter.GetType().GetProperties()){
+<div class="m-1">
+    @{
+        FilterProperty<bool> b = f.GetValue(Filter) as FilterProperty<bool>;
+        FilterProperty<int> i = f.GetValue(Filter) as FilterProperty<int>;
+        FilterProperty<string> s = f.GetValue(Filter) as FilterProperty<string>;
+    }
+    @if(b != null){
+        <FilterPropertyDetail filterProperty="@b" T='bool' onFilterChanged="@onFilterChangeBool" />
+    }
+    @if(i != null){
+        <FilterPropertyDetail filterProperty="@i" T='int' onFilterChanged="@onFilterChangeInt" />
+    }
+    @if(s != null){
+        <FilterPropertyDetail filterProperty="@s" T='string' onFilterChanged="@onFilterChangeString" />
+    }
+</div>
+}
+
+@typeparam T 
+@code
+{
+    [Parameter]
+    public T Filter {get; set;}
+    [Parameter]
+    public EventCallback<T> FilterChanged { get; set; }
+    public async Task onFilterChangeInt(FilterProperty<int> fp){
+        var p = Filter.GetType().GetProperty(fp.Name);
+        p.SetValue(Filter, fp);
+        await Update();
+    }
+    public async Task onFilterChangeBool(FilterProperty<bool> fp){
+        var p = Filter.GetType().GetProperty(fp.Name);
+        p.SetValue(Filter, fp);
+        await Update();
+    }
+    public async Task onFilterChangeString(FilterProperty<string> fp){
+        var p = Filter.GetType().GetProperty(fp.Name);
+        p.SetValue(Filter, fp);
+        await Update();
+
+    }
+    private async Task Update(){
+        await FilterChanged.InvokeAsync(Filter);
+    }
+    
+
+}
