@@ -13,8 +13,8 @@ else
     <div style="display:flex;flex-wrap:wrap;">
         <FilterTest @bind-Filter='filter'/>
     </div>
-    <button class="btn btn-primary" @onclick="FilterPage">Filter</button>
     <div class="d-flex justify-content-between">
+    <button class="btn btn-primary m-1" @onclick="FilterPage">Filter</button>
     <BlazorPager CurrentPage="@_data.CurrentPage"
             PageCount="@_data.PageCount"
             OnPageChanged="(async e => { _page = e; await GetData();})"
@@ -25,16 +25,10 @@ else
             NextText=">"
             PreviousText="<"/>
     </div>
-    <table class="table">
-        <tbody>
         @foreach (var item in _data.Results)
         {
-        <tr>
             <SpecialtyDetail specialty=@item/>
-        </tr>
         }
-        </tbody>
-    </table>
     <div class="d-flex justify-content-between">
     <BlazorPager CurrentPage="@_data.CurrentPage"
             PageCount="@_data.PageCount"
