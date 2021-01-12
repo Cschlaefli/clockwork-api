@@ -9,4 +9,7 @@ namespace tephraAPI.GenerationModels{
     [Api(Plural = "Specialties")]
     public class Specialty : Clockwork.Models.Specialty {
     }
+    [Api]
+    public class Character : Clockwork.Models.Character {
+    }
 }

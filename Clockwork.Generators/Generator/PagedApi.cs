@@ -169,7 +169,7 @@ namespace tephraApi.Controllers
 {lb}
     [Route(""api/[controller]"")]
     [ApiController]
-    public class {name}Controller : ControllerBase
+    public partial class {name}Controller : ControllerBase
     {lb}
         private readonly BaseDbContext _context;
 

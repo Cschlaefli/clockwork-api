@@ -27,12 +27,10 @@ else
     </div>
     <table class="table">
         <tbody>
-        @foreach (var item in _data.Results)
-        {
+            <Virtualize Items=_data.Results Context=item>
         <tr>
             <SpecialtyDetail specialty=@item/>
-        </tr>
-        }
+        </tr></Virtualize>
         </tbody>
     </table>
     <div class="d-flex justify-content-between">

@@ -16,6 +16,7 @@ namespace Clockwork.Models{
     }
     public class FilterProperty{
         public string Name {get;set;}
+        [EnumDataType(typeof(FilterOperations))]
         public FilterOperations? Filter {get;set;} = FilterOperations.Nothing;
         public string SortDir {get;set;}
 

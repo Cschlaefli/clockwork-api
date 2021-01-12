@@ -8,3 +8,8 @@
             Template = "Default";
         }
     }
+    [System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=true)]
+    internal sealed class IncludeAttribute : System.Attribute
+    {
+
+    }
