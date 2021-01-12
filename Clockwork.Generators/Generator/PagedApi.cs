@@ -165,7 +165,7 @@ using Clockwork.Models;
 using Clockwork.API.Data;
 using Microsoft.AspNetCore.Cors;
 
-namespace tephraApi.Controllers
+namespace Clockwork.API.Controllers
 {lb}
     [Route(""api/[controller]"")]
     [ApiController]
