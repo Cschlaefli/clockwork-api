@@ -20,12 +20,21 @@
             </div>
         </div>
         <div class="card-body @(Collapse ? "collapse" : 0)">
-            @(specialty.Reflexive ? "Reflexive" : "")
-            @specialty.Stance
-            @specialty.Requirments
-            @specialty.Resist
-            @specialty.Cost
-            @specialty.Description
+            <h2>Requires : @specialty.Requirments</h2>
+            <h2>Cost : @specialty.Cost
+                <b> @(specialty.Reflexive ? "| Reflexive" : "")</b>
+                <b> @(specialty.Stance ? "| Stance " : "")</b>
+                <Tooltip Text="Costs 1 AP to enter">Stance </Tooltip>
+                <b> @if (specialty.Stance)
+                    {
+                        <Tooltip Text="Costs 1 AP to enter">Stance </Tooltip>
+                    }
+                </b>
+            </h2>
+            <h2>Resist : @specialty.Resist</h2>
+            <p>
+                @specialty.Description
+            </p>
             <button class="btn btn-primary" style="display:none" @onclick="OnClickCallback" />
         </div>
 

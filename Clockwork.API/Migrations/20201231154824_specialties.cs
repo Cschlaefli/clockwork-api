@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace tephraAPI.Migrations
+namespace Clockwork.API.Migrations
 {
     public partial class specialties : Migration
     {

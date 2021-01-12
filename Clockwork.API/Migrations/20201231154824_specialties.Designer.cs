@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using tephraAPI.Models;
+using Clockwork.API.Data;
 
-namespace tephraAPI.Migrations
+namespace Clockwork.API.Migrations
 {
     [DbContext(typeof(BaseDbContext))]
     [Migration("20201231154824_specialties")]
