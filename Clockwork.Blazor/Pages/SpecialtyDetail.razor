@@ -1,21 +1,55 @@
 @using Clockwork.Models
 
-<div class="panel panel-default">
-    <div class="panel-heading">@specialty.Id @specialty.Name</div>
-    <div class="card-body">
-        @specialty.Description
-    </div>
+<div class="input-group">
+    <div class="col card bg-secondary text-white mb-1">
+        <div class="card-header bg-secondary text-white">
+            <button @onclick="toggleCollapse" class="btn text-white @(Collapse ? "btn-primary" : "btn-outline-danger")">
+                @specialty.Name | @specialty.Attr | @specialty.Skill | @specialty.Subtype
+            </button>
+            <div class=" float-right align-center">
+                @(specialty.Accuracy == 0 ? "" : $"Acc + {specialty.Accuracy}")
+                @(specialty.Evade == 0 ? "" : $"Eva + {specialty.Evade}")
+                @(specialty.Strike == 0 ? "" : $"Stk + {specialty.Strike}")
+                @(specialty.Defense == 0 ? "" : $"Def + {specialty.Defense}")
+                @(specialty.Speed == 0 ? "" : $"Spd + {specialty.Speed}")
+                @(specialty.Priority == 0 ? "" : $"Spd + {specialty.Priority}")
+                @(specialty.Augments == 0 ? "" : $"Aug + {specialty.Augments}")
+                @(specialty.DIY == 0 ? "" : $"DIY + {specialty.DIY}")
+                @(specialty.Wounds == 0 ? "" : $"Wnd + {specialty.Wounds}")
+                @(specialty.HitPoints == 0 ? "" : $"Hp + {specialty.HitPoints}")
+            </div>
+        </div>
+        <div class="card-body @(Collapse ? "collapse" : 0)">
+            <h2>Requires : @specialty.Requirments</h2>
+            <h2>Cost : @specialty.Cost
+                <b> @(specialty.Reflexive ? "| Reflexive" : "")</b>
+                <b> @(specialty.Stance ? "| Stance " : "")</b>
+                <Tooltip Text="Costs 1 AP to enter">Stance </Tooltip>
+                <b> @if (specialty.Stance)
+                    {
+                        <Tooltip Text="Costs 1 AP to enter">Stance </Tooltip>
+                    }
+                </b>
+            </h2>
+            <h2>Resist : @specialty.Resist</h2>
+            <p>
+                @specialty.Description
+            </p>
+            <button class="btn btn-primary" style="display:none" @onclick="OnClickCallback" />
+        </div>
 
-    <button class="btn btn-primary" style="display:none" @onclick="OnClickCallback">
-    </button>
+    </div>
 </div>
 
 
 
 @code{
+    [Parameter]
+    public bool Collapse { get; set; } = true;
+    public void toggleCollapse() => Collapse = !Collapse;
 
     [Parameter]
-    public Specialty specialty {get; set;}
+    public Specialty specialty { get; set; }
     [Parameter]
     public EventCallback<MouseEventArgs> OnClickCallback { get; set; }
 }

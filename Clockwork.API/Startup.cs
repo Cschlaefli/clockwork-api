@@ -13,15 +13,15 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using tephraAPI.Models;
+using Clockwork.API.Data;
 using Clockwork.Models;
 using System.Net.Http;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Extensions;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using tephraAPI.Swagger.Extenstions;
+using Clockwork.API.Swagger.Extenstions;
 
-namespace tephraAPI
+namespace Clockwork.API
 {
     public class Startup
     {

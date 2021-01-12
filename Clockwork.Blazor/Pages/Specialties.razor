@@ -1,3 +1,4 @@
+@layout MainLayout
 @page "/specialties"
 @using System.Net.Http
 @inject HttpClient Http
@@ -13,8 +14,8 @@ else
     <div style="display:flex;flex-wrap:wrap;">
         <FilterTest @bind-Filter='filter'/>
     </div>
-    <button class="btn btn-primary" @onclick="FilterPage">Filter</button>
     <div class="d-flex justify-content-between">
+    <button class="btn btn-primary m-1" @onclick="FilterPage">Filter</button>
     <BlazorPager CurrentPage="@_data.CurrentPage"
             PageCount="@_data.PageCount"
             OnPageChanged="(async e => { _page = e; await GetData();})"
@@ -25,14 +26,9 @@ else
             NextText=">"
             PreviousText="<"/>
     </div>
-    <table class="table">
-        <tbody>
             <Virtualize Items=_data.Results Context=item>
-        <tr>
             <SpecialtyDetail specialty=@item/>
-        </tr></Virtualize>
-        </tbody>
-    </table>
+        </Virtualize>
     <div class="d-flex justify-content-between">
     <BlazorPager CurrentPage="@_data.CurrentPage"
             PageCount="@_data.PageCount"

@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Clockwork.Models;
 using System.Collections.Generic;
 
-namespace tephraAPI.Models
+namespace Clockwork.API.Data
 {
     public class BaseDbContext : DbContext
     {
