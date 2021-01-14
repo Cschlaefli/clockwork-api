@@ -28,9 +28,11 @@ namespace Clockwork.API
         public Startup(IConfiguration configuration, IHostEnvironment env)
         {
             Configuration = configuration;
+            Environment = env;
         }
 
         public IConfiguration Configuration { get; }
+        public IHostEnvironment Environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -52,33 +54,44 @@ namespace Clockwork.API
                 });
             });
 
-            services.AddDbContextPool<BaseDbContext>(
-                dbContextOptions => dbContextOptions
-                    .UseMySql(
-                        Configuration.GetConnectionString("Tephra"),
-                        // Replace with your server version and type.
-                        // For common usages, see pull request #1233.
-                        new MariaDbServerVersion(new Version(10, 1, 47)), // use MariaDbServerVersion for MariaDB
-                        mySqlOptions => mySqlOptions
-                            .CharSetBehavior(CharSetBehavior.NeverAppend))
-                    // Everything from this point on is optional but helps with debugging.
-                    .EnableSensitiveDataLogging()
-                    .EnableDetailedErrors()
-            );
+
+
+
+            if (env.IsDevelopment()){
+                services.AddDbContextPool<BaseDbContext>(
+                    dbContextOptions => dbContextOptions
+                        .UseMySql(
+                            Configuration.GetConnectionString("Tephra"),
+                            // Replace with your server version and type.
+                            // For common usages, see pull request #1233.
+                            new MariaDbServerVersion(new Version(10, 1, 47)), // use MariaDbServerVersion for MariaDB
+                            mySqlOptions => mySqlOptions
+                                .CharSetBehavior(CharSetBehavior.NeverAppend))
+                        // Everything from this point on is optional but helps with debugging.
+                        .EnableSensitiveDataLogging()
+                        .EnableDetailedErrors()
+                );
+            }else{
+                services.AddDbContext<BaseDbContext>(
+                    dbContextOptions => dbContextOptions
+                        .UseSqlServer(Configuration.GetConnectionString("Azure"))
+                );
+            }
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "tephraAPI", Version = "v1" });
                 //c.DocumentFilter<CustomModelDocumentFilter<AugmentFilter>>();
-                //c.DocumentFilter<CustomModelDocumentFilter<SpecialtyFilter>>();
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "tephraAPI v1"));
 

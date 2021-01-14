@@ -22,14 +22,12 @@
         <div class="card-body @(Collapse ? "collapse" : 0)">
             <h2>Requires : @specialty.Requirments</h2>
             <h2>Cost : @specialty.Cost
-                <b> @(specialty.Reflexive ? "| Reflexive" : "")</b>
-                <b> @(specialty.Stance ? "| Stance " : "")</b>
-                <Tooltip Text="Costs 1 AP to enter">Stance </Tooltip>
-                <b> @if (specialty.Stance)
+                <b> @(specialty.Reflexive ? "| Reflexive " : "")</b>
+                <i> @if (specialty.Stance)
                     {
-                        <Tooltip Text="Costs 1 AP to enter">Stance </Tooltip>
+                        <StanceTooltip>| Stance </StanceTooltip>
                     }
-                </b>
+                </i>
             </h2>
             <h2>Resist : @specialty.Resist</h2>
             <p>

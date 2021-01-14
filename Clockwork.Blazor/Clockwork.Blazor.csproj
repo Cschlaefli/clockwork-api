@@ -19,6 +19,7 @@
 
   <ItemGroup>
       <Watch Include="..\Pages\*" />
+      <Watch Include="..\Shared\*" />
   </ItemGroup>
 
 </Project>
